@@ -1,0 +1,61 @@
+<HTML>
+
+<HEAD>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+    <Title>Security Considerations</Title>
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <link rel="stylesheet" href="../assets/style.css">
+</HEAD>
+
+<BODY>
+    <div class="header">
+        <h1>
+            <span class="product-logo">
+                <img src="../assets/images/logo.png" alt="" class="l"><img src="../assets/images/logo-small.png" alt="" class="s">
+            </span>
+            <span class="article__title">Security Considerations</span>
+        </h1>
+    </div>
+
+    <div class="article">
+
+        <div class="article__content">
+            <p class="note">Please note that each entity has various security settings to restirct access, there are a few patterns.</p>
+            <ul>
+                <li>**Anonymous GETs, authenicated admin roles required for everything else **- This pertains to Jobs, JobRoles,
+                    and JobResources.</li>
+                <li>
+                    <b>Anonymous GETs, authenticated admin roles can do anything while authenticated user roles can only affect
+                        their own data</b> - Applies to Categories</li>
+                <li>
+                    <b>Authentication always required, admins can modify user data but users can only modify their own data
+                    </b> - Applies to CategoryItems, CategoryItemImages.</li>
+            </ul>
+            <p>Users and User feedback are special case, see the API docs for those resources.</p>
+        </div>
+
+        <div class="article__footer">
+            <h2>See Also</h2>
+            <ul class="see-also">
+                <li>
+                    <a href="entity-desc.htm">Entity Descriptions</a>
+                </li>
+                <li>
+                    <a href="app-design.htm">Application Design Notes</a>
+                </li>
+                <li>
+                    <a href="api-calls.htm">API Calls</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <span class="copy">Copyright &copy; 2017 | GentleCode LLC | All Rights Reserved</span>
+    </div>
+    <script src="../assets/script.js" defer></script>
+</BODY>
+
+</HTML>

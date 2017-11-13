@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<!--<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="What's New">
+		<param name="Local" value="articles\whats-new.htm">
+		</OBJECT>-->
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Overview">
+		<param name="Local" value="articles\overview.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="User Reference">
+		<param name="Local" value="articles\user-ref.htm">
+		</OBJECT>
+	
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sign Up / Log in">
+			<param name="Local" value="articles\login.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Home Screen">
+			<param name="Local" value="articles\home.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adding Documents">
+			<param name="Local" value="articles\add-doc.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Categories">
+			<param name="Local" value="articles\categories.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Notifications">
+			<param name="Local" value="articles\alerts.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sharing">
+			<param name="Local" value="articles\sharing.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Resources">
+			<param name="Local" value="articles\resources.htm">
+			</OBJECT>
+
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Developer Reference">
+		<param name="Local" value="articles\dev-ref.htm">
+		</OBJECT>
+	
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Requirements">
+			<param name="Local" value="articles\requirements.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Troubleshooting">
+			<param name="Local" value="articles\troubleshooting.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="API Reference">
+			<param name="Local" value="articles\api-ref.htm">
+			</OBJECT>
+			
+			
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Entity Descriptions">
+					<param name="Local" value="articles\entity-desc.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Application Design Notes">
+					<param name="Local" value="articles\app-design.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Security Considerations">
+					<param name="Local" value="articles\security.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="API Calls">
+					<param name="Local" value="articles\api-calls.htm">
+					</OBJECT>
+
+					
+						<LI> <OBJECT type="text/sitemap">
+							<param name="Name" value="Job Resource">
+							<param name="Local" value="articles\job-resource.htm">
+							</OBJECT>
+
+							
+								<LI> <OBJECT type="text/sitemap">
+									<param name="Name" value="Get all Jobs">
+									<param name="Local" value="articles\job-resource-get-all.htm">
+									</OBJECT>
+								<LI> <OBJECT type="text/sitemap">
+									<param name="Name" value="Get a Specific Job">
+									<param name="Local" value="articles\job-resource-get-spec.htm">
+									</OBJECT>
+								<LI> <OBJECT type="text/sitemap">
+									<param name="Name" value="Create a New Job">
+									<param name="Local" value="articles\job-resource-create.htm">
+									</OBJECT>
+								<LI> <OBJECT type="text/sitemap">
+									<param name="Name" value="Delete a Job">
+									<param name="Local" value="articles\job-resource-delete.htm">
+									</OBJECT>
+								<LI> <OBJECT type="text/sitemap">
+									<param name="Name" value="Update a Specific Job">
+									<param name="Local" value="articles\job-resource-update.htm">
+									</OBJECT>
+				
+							
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="JobRole Resource">
+						<param name="Local" value="articles\jobrole-resource.htm">
+						</OBJECT>
+
+						
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Get all JobRoles">
+								<param name="Local" value="articles\jobrole-resource-get-all.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Get a Specific JobRole">
+								<param name="Local" value="articles\jobrole-resource-get-spec.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Create a New JobRole">
+								<param name="Local" value="articles\jobrole-resource-create.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Delete a JobRole">
+								<param name="Local" value="articles\jobrole-resource-delete.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Update a Specific JobRole">
+								<param name="Local" value="articles\jobrole-resource-update.htm">
+								</OBJECT>
+				
+
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="JobResource Resource">
+						<param name="Local" value="articles\jobresource-resource.htm">
+						</OBJECT>
+						
+						
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Get all JobResources">
+								<param name="Local" value="articles\jobresource-resource-get-all.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Get a Specific JobResource">
+								<param name="Local" value="articles\jobresource-resource-get-spec.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Create a New JobResource">
+								<param name="Local" value="articles\jobresource-resource-create.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Delete a JobResource">
+								<param name="Local" value="articles\jobresource-resource-delete.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Update a Specific JobResource">
+								<param name="Local" value="articles\jobresource-resource-update.htm">
+								</OBJECT>
+					
+
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Category Resource">
+						<param name="Local" value="articles\category-resource.htm">
+						</OBJECT>
+						
+						
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Get all Categories">
+								<param name="Local" value="articles\category-resource-get-all.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Get a Specific Category">
+								<param name="Local" value="articles\category-resource-get-spec.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Create a New Category">
+								<param name="Local" value="articles\category-resource-create.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Delete a Category">
+								<param name="Local" value="articles\category-resource-delete.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Update a Specific Category">
+								<param name="Local" value="articles\category-resource-update.htm">
+								</OBJECT>
+					
+						
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="User Resource">
+						<param name="Local" value="articles\user-resource.htm">
+						</OBJECT>
+						
+						
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Get all Users">
+								<param name="Local" value="articles\user-resource-get-all.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Get a Specific User">
+								<param name="Local" value="articles\user-resource-get-spec.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Create a New User">
+								<param name="Local" value="articles\user-resource-create.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Delete a User">
+								<param name="Local" value="articles\user-resource-delete.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Update a Specific User">
+								<param name="Local" value="articles\user-resource-update.htm">
+								</OBJECT>
+					
+
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="UserFeedbacks Resource">
+						<param name="Local" value="articles\userfeedbacks-resource.htm">
+						</OBJECT>
+						
+						
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Get all UserFeedbacks">
+								<param name="Local" value="articles\userfeedbacks-resource-get-all.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Get a Specific UserFeedback">
+								<param name="Local" value="articles\userfeedbacks-resource-get-spec.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Create a New UserFeedback">
+								<param name="Local" value="articles\userfeedbacks-resource-create.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Delete a UserFeedback">
+								<param name="Local" value="articles\userfeedbacks-resource-delete.htm">
+								</OBJECT>
+</UL>
+</BODY></HTML>

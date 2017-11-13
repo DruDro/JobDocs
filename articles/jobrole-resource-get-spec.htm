@@ -1,0 +1,66 @@
+<HTML>
+
+<HEAD>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+    <Title>JobRole Resource - Get A Specific JobRole Call</Title>
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <link rel="stylesheet" href="../assets/style.css">
+</HEAD>
+
+<BODY>
+    <div class="header">
+        <h1>
+            <span class="product-logo">
+                <img src="../assets/images/logo.png" alt="" class="l"><img src="../assets/images/logo-small.png" alt="" class="s">
+            </span>
+            <span class="article__title">
+                <span class="resource-title">JobRole Resource</span>
+                <br>Get A Specific JobRole Call</span>
+        </h1>
+    </div>
+
+    <div class="article">
+
+        <div class="article__content">
+            <p>returns a specific JobRole object in the system</p>
+            <h3 class="ref-title"><img class="icon ref" src="../assets/images/icons/link.png">URL</h3>
+            <pre class="url">api/v1/JobRoles/{id}</pre>
+            <h3 class="ref-title"><img class="icon ref" src="../assets/images/icons/cube.png">Method</h3>
+            <pre>GET</pre>
+            <h3 class="ref-title"><img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
+            <ul>
+                <li>
+                    <b>id</b> - the id of the JobRole to retrieve.</li>
+            </ul>
+            <h3 class="ref-title"><img class="icon ref" src="../assets/images/icons/curly.png">Payload</h3>
+            <p>None</p>
+            <h3 class="ref-title"><img class="icon ref" src="../assets/images/icons/security.png">Required Security</h3>
+            <p>Anonymous
+            </p>
+            <h3 class="ref-title"><img class="icon ref" src="../assets/images/icons/tick.png">Success Response</h3>
+            <ul>
+                <li>
+                    Code:
+                    <pre>200</pre>
+                </li>
+                <li>
+                    Content:
+                    <pre>Serialized JobRoleDTO</pre>
+                </li>
+            </ul>
+            <h3 class="ref-title"><img class="icon ref" src="../assets/images/icons/code.png">Sample Code</h3>
+            <pre class="sample">curl -X GET --header 'Accept: application/json'
+'https://jdmobileapp.azurewebsites.net/api/v1/JobRoles/e5d8efbf-5bc9-4535-b824-7602689c18b5'</pre>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <span class="copy">Copyright &copy; 2017 | GentleCode LLC | All Rights Reserved</span>
+    </div>
+    <script src="../assets/script.js" defer></script>
+</BODY>
+
+</HTML>

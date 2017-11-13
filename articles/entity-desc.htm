@@ -1,0 +1,79 @@
+<HTML>
+
+<HEAD>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+    <Title>Entity Descriptions</Title>
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <link rel="stylesheet" href="../assets/style.css">
+</HEAD>
+
+<BODY>
+    <div class="header">
+        <h1>
+            <span class="product-logo">
+                <img src="../assets/images/logo.png" alt="" class="l"><img src="../assets/images/logo-small.png" alt="" class="s">
+            </span>
+            <span class="article__title">Entity Descriptions</span>
+        </h1>
+    </div>
+
+    <div class="article">
+
+        <div class="article__content">
+            <p>These are the basic types of resources that can be found in the JobDocs domain. Please refer to the Data model
+                project in the solution for the attributes of these entities, both EF and DTO objects exist. Please note
+                that some of these may not make sense to provide to an API consumer directly and would have very different
+                DTOs unrelated to the entity model.</p>
+            <ul>
+                <li>
+                    <b>Job</b> - Identifies the occupation the user undertakes in order to provide realistic jobroles, job resources
+                    and categories to the user. (In our initial release there is only "Nursing", but the data model could
+                    support more someday if needed.)</li>
+                <li>
+                    <b>JobRole</b> - A subspecialization of the Job. Given our one known Job of "Nursing" Job Roles include
+                    such thigns as "RN" or "LPN".</li>
+                <li>
+                    <b>JobResources</b> - A Job Resource is a link to websites that are of relevance to a given Job or Job Role
+                    Category - A Category provides a logical grouping for the users documents. Categories are unique to a
+                    job, but user defined categories can be added.</li>
+                <li>
+                    <b>CategoryItem</b> - A Category Item is an individual document stored by a user.</li>
+                <li>
+                    <b>CategoryItemImage</b> - A Category Item Image is a picture of the document referred to by the CategoryItem.
+                    A Category Item will contain one or more CategoryItemImages</li>
+                <li>
+                    <b>ApplicationUser</b> - Contains both the profile of the user and information on their identity in the
+                    system.
+                </li>
+                <li>
+                    <b>UserFeedback</b> - Contains a record of any feedback the user provided via the mobile app</li>
+                <li>
+                    <b>UserJob</b> - Tracks associations between ApplicationUsers and their Jobs, Job Roles and Categories.</li>
+            </ul>
+        </div>
+
+        <div class="article__footer">
+            <h2>See Also</h2>
+            <ul class="see-also">
+                <li>
+                    <a href="app-design.htm">Application Design Notes</a>
+                </li>
+                <li>
+                    <a href="security.htm">Security Considerations</a>
+                </li>
+                <li>
+                    <a href="api-calls.htm">API Calls</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <span class="copy">Copyright &copy; 2017 | GentleCode LLC | All Rights Reserved</span>
+    </div>
+    <script src="../assets/script.js" defer></script>
+</BODY>
+
+</HTML>

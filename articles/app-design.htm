@@ -1,0 +1,64 @@
+<HTML>
+
+<HEAD>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+    <Title>Application Design Notes</Title>
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <link rel="stylesheet" href="../assets/style.css">
+</HEAD>
+
+<BODY>
+    <div class="header">
+        <h1>
+            <span class="product-logo">
+                <img src="../assets/images/logo.png" alt="" class="l"><img src="../assets/images/logo-small.png" alt="" class="s">
+            </span>
+            <span class="article__title">Application Design Notes</span>
+        </h1>
+    </div>
+
+    <div class="article">
+
+        <div class="article__content">
+            <p>While normally you might see all the data payloads and possible error codes spelled out in the document, this
+                is not a long term document (we will use automated tools liek swagger to document what we built in detail
+                after the fact) and it is not worth the time to make this docuement overly detailed.</p>
+            <p>Various items are left to the developer to realize such as :</p>
+            <ul>
+                <li>Not all the DTOs are fully fleshed out yet and are not covered in detail. Any required attributes that are
+                    not currently passed along from the Entity Framework POCO to the DTO can be freely added.</li>
+                <li>Common sense responses are not listed out in detail (like returning a 404 when a request rresource is not
+                    found) but are expected to be present in the code. Different situations will of course dictate different
+                    HTTP responses.
+                </li>
+            </ul>
+            <p>There are a few half-coded controllers and data access services in the project, those can be modified to suit
+                or completely redone. The only concept that needs to reamin is the concept of seperating the various parts
+                with interfaces to allow unit testability.</p>
+        </div>
+
+        <div class="article__footer">
+            <h2>See Also</h2>
+            <ul class="see-also">
+                <li>
+                    <a href="entity-desc.htm">Entity Descriptions</a>
+                </li>
+                <li>
+                    <a href="security.htm">Security Considerations</a>
+                </li>
+                <li>
+                    <a href="api-calls.htm">API Calls</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <span class="copy">Copyright &copy; 2017 | GentleCode LLC | All Rights Reserved</span>
+    </div>
+    <script src="../assets/script.js" defer></script>
+</BODY>
+
+</HTML>

@@ -1,0 +1,174 @@
+
+html,body {
+    margin:0;
+    padding:0;
+    background:white;
+}
+body {
+    font: 14px/18px Arial, Helvetica, Helvetica-Neue, Verdana, sans-serif; 
+    color:#333;
+    min-width:320px;
+}
+
+a {
+    color:#f68d1e;
+}
+
+span.link {
+    font-weight:700;
+    color:#489BD4;
+}
+
+span.link.orange {
+    color:#F58F23;
+}
+
+.center {
+    text-align:center;
+}
+
+.note {
+    padding: 15px 10px;
+    background:#ffff89;
+    color:#000;
+}
+
+img {
+    width:auto;
+    max-width: 100%;
+    height:auto;
+    display:block;
+    margin: 0 auto;
+    text-align:center;
+}
+img.chart {
+    display:inline-block;
+    width:100%;
+}
+img.screen {
+    width:320px;
+}
+
+img.icon {
+    display:inline-block;
+    margin:0 5px;
+    height:auto;
+    vertical-align:baseline;
+}
+
+img.icon.s {    
+    width:24px;
+}
+img.icon.m {    
+    width:36px;
+}
+img.icon.l {    
+    width:48px;
+}
+
+img.icon.ref {
+    width:16px;
+    margin:0 15px 0 0;
+}
+
+.flowchart {
+    margin:0 -15px;
+    text-align:center;
+    background:#dadada;
+}
+
+pre {
+    font: 14px/18px 'Courier New', monospase;
+    overflow-x:auto;
+}
+pre.url {
+    color:#00a;
+    padding:8px 10px;
+    border-radius:2px;
+    border:1px solid #ccc;
+}
+pre.sample {
+    background: #454545;
+    padding:15px 10px;
+    color:#f5f5f5;
+}
+
+.ref-title {
+    padding-top:15px;
+}
+.header {
+    padding: 15px;
+    border-bottom:1px solid #f0f0f0;
+}
+.header h1 {
+    display:table;
+    width:100%;
+    font-size:0;
+    line-height:0;
+    margin:0;
+    padding:0;
+}
+.header h1 .resource-title {
+    font-size: .7em;
+}
+.header .product-logo,
+.header .article__title {
+    display:table-cell;
+    vertical-align:middle;
+}
+.header .product-logo{  
+    width: 150px;
+    padding: 0 15px 0 0;
+}
+.header .product-logo img {
+    display:block;
+    margin:0 auto;
+    width:100%;
+    max-width:100%;
+}
+.header .product-logo img.s {
+    display:none;
+}
+.header .article__title{
+    font-size:28px;
+    font-weight:300;
+    padding: 0 0 0 15px;
+    line-height:1em;
+}
+
+.article__header, .article__footer {
+    background: #f5f5f5;
+    padding:15px;
+}
+.article__content {
+    padding: 15px 15px 0;
+}
+.footer {
+    margin:75px 0 0;
+    padding: 15px;
+    border-top:1px solid #f0f0f0;
+}
+
+.footer .copy {
+    display:block;
+    text-align:center;
+    font-style:italic;
+    color:#777;
+}
+
+@media screen and (max-width: 667px){
+    
+.header .article__title{
+    font-size:24px;
+}
+    .header .product-logo {
+        width: 24px;
+        padding:0;
+    }
+    .header .product-logo img.l {
+        display:none;
+    }
+    .header .product-logo img.s {
+        display:block;
+    }
+}
