@@ -89,12 +89,12 @@ assets\normalize.css
 assets\style.css
 assets\script.js
 
-Compile time: 0 minutes, 5 seconds
+Compile time: 0 minutes, 4 seconds
 53	Topics
 225	Local links
 0	Internet links
 30	Graphics
 
 
-Created d:\help\JobDocs\JobDocs.chm, 8,219,264 bytes
-Compression decreased file by 335,173 bytes.
+Created d:\help\JobDocs\JobDocs.chm, 4,803,482 bytes
+Compression decreased file by 266,777 bytes.
