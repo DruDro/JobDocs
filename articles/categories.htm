@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="../assets/style.css">
 </HEAD>
 
-<BODY>
+<body>
     <div class="header">
         <h1>
             <span class="product-logo">
-                <img src="../assets/images/logo.png" alt="" class="l"><img src="../assets/images/logo-small.png" alt="" class="s">
+                <img src="../assets/images/logo.png" alt="" class="l">
+                <img src="../assets/images/logo-small.png" alt="" class="s">
             </span>
             <span class="article__title">Categories</span>
         </h1>
@@ -24,16 +25,13 @@
             <h2>Table of Contents</h2>
             <ul class="local-toc">
                 <li>
-                    <a href="#chart">User Flow Chart</a>
-                </li>
-                <li>
                     <a href="#desc">User Flow Description</a>
                     <ul>
                         <li>
-                            <a href="#login">Login</a>
+                            <a href="#add-category">Adding a new category</a>
                         </li>
                         <li>
-                            <a href="#signup">Sign up</a>
+                            <a href="#add-via-new-doc">Create a new category while adding documents</a>
                         </li>
                     </ul>
                 </li>
@@ -41,19 +39,116 @@
         </div>
 
         <div class="article__content">
-            <a name="chart"></a>
-            <h2>User Flow Chart</h2>
-            <div class="flowchart">
-                <img class="chart" src="../assets/images/flowcharts/Start.png">
-            </div>
             <a name="desc"></a>
             <h2>User Flow Description</h2>
-            <a name="login"></a>
-            <h3>Login</h3>
-            <p>Login steps description</p>
-            <a name="signup"></a>
-            <h3>Sign up</h3>
-            <p>Sign up steps description</p>
+            <div class="note">
+                <p>This section assumes that you have already read the following articles:</p>
+                <ul>
+                    <li>
+                        <a href="login.htm">Sign Up / Log In </a>
+                    </li>
+                    <li>
+                        <a href="home.htm">Home Screen</a>
+                    </li>
+                    <li>
+                        <a href="add-doc.htm">Working With Documents</a>
+                    </li>
+                </ul>
+            </div>
+            <p>There are several preselected categories in JobDocs, based on your job:</p>
+            <ul>
+                <li><p><b>Licenses</b> - a predefined category, designed to store licenses.</p></li>
+                <li><p><b>Vaccine Complience</b> - a predefined category, designed to store vaccine complience documents.</p></li>
+                <li><p><b>Skill Certifications</b> - a predefined category, designed to store certifications.</p></li>
+                <li><p><b>Contact Hours (CE)</b> - a predefined category, designed to store Contact Hours certificates. On the Home Screen, it displays not the number of documents, but the earned time of Continued Education, Contact Hours, Clinical Hours, Rx Hours, depending on what you specify when adding a document.</p></li>
+                <li><p><b>Diplomas</b> - a predefined category, designed to store diplomas.</li>
+                <li><p><b>Job-Related Equipment</b> - a predefined category, designed to store information about equipment you can use.</p></li>
+                <li><p><b>Receipts</b> - a predefined category, designed to store receipts.</p></li>
+                <li><p><b>Contracts</b> - a predefined category, designed to store contracts.</p></li>
+                <li><p><b>Documents</b> - a predefined category, designed to store other kinds of documents.</p></li>
+            </ul>
+            <p>When
+                <a href="login.htm#signup">creating an account</a> in JobDocs, you can see the list of available categories.</p>
+                
+            <p>
+                    <img src="../assets/images/screenshots/predefined-categories.png" alt="" class="screen">
+                </p>
+                <p>The selected categories will be displayed on the
+                <a href="home.htm">Home Screen</a>. From here you can
+                <b>add</b>, <b>edit</b>, <b>share</b> and <b>remove</b> categories.</p>
+                
+            <p>
+                    <img src="../assets/images/screenshots/home.png" alt="" class="screen">
+                </p>
+            <a name="add-category"></a>
+            <h3>Adding a category</h3>
+            <p>To add a new category, follow the steps below:</p>
+            <ul>
+                <li>
+                    <p>Tap the
+                        <img src="../assets/images/icons/add-btn.png" alt="add" class="icon l"> button</p>
+                </li>
+                <li>
+                    <p>Select
+                        <b>Category</b>
+                    </p>
+                    <p>
+                        <img src="../assets/images/screenshots/add-menu.jpg" alt="" class="screen">
+                    </p>
+                </li>
+                <li>
+                    <p>Type in the name of the new category.</p>
+                </li>
+                <li>
+                    <p>
+                        <b>SAVE</b>
+                    </p>
+                </li>
+            </ul>
+            <p>The newly created category will appear in the Categories list on the Home Screen. So now you can
+                <a href="add-doc.htm">add or move documents</a> to this category.</p>
+
+            <a name="#add-via-new-doc"></a>
+            <h3>Create a new category while adding documents</h3>
+            <p>If you need to add a new document to a category, that doesn't exist yet, you can skip the above steps. Just perform
+                the following steps: </p>
+            <ul>
+                <li>
+                    <p>Tap the
+                        <img src="../assets/images/icons/add-btn.png" alt="add" class="icon l"> button</p>
+                </li>
+                <li>
+                    <p>Select
+                        <b>Document</b>
+                    </p>
+                </li>
+                <li>
+                    <p>Follow the steps described in the
+                        <b>Working With Documents</b> article, the
+                        <a href="add-doc.htm#add-doc">Adding a new document</a> section.</p>
+                </li>
+                <li>
+                    <p>When you reach the step where the new document page appears:</p>
+
+                    <p>
+                        <img src="../assets/images/screenshots/new-doc.png" alt="" class="screen">
+                    </p>
+                    <p>tap
+                        <b>Set Location</b> ->
+                        <b>Create Category</b>
+                    </p>
+                </li>
+                <li>
+                    <p>Type in the name of the new category.</p>
+                </li>
+                <li>
+                    <p>
+                        <b>SAVE</b>
+                    </p>
+                </li>
+                <li>Follow the instructions from the
+                    <a href="add-doc.htm">Working With Documents</a> article.</li>
+            </ul>
         </div>
 
         <div class="article__footer">
@@ -61,6 +156,9 @@
             <ul class="see-also">
                 <li>
                     <a href="home.htm">Home Screen</a>
+                </li>
+                <li>
+                    <a href="add-doc.htm">Working With Documents</a>
                 </li>
             </ul>
         </div>
