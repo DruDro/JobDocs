@@ -84,6 +84,7 @@ img.icon.ref {
 pre {
     overflow-x:auto;
     padding:0;
+    max-height: 500px;
 }
 pre.url {
     color:#00a;
