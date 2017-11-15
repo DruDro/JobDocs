@@ -82,19 +82,14 @@ img.icon.ref {
 }
 
 pre {
-    font: 14px/18px 'Courier New', monospase;
     overflow-x:auto;
+    padding:0;
 }
 pre.url {
     color:#00a;
     padding:8px 10px;
     border-radius:2px;
     border:1px solid #ccc;
-}
-pre.sample {
-    background: #454545;
-    padding:15px 10px;
-    color:#f5f5f5;
 }
 
 ul {
