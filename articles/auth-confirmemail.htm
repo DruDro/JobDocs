@@ -1,0 +1,77 @@
+<HTML>
+    
+    <HEAD>
+      <meta http-equiv="X-UA-Compatible" content="IE=9">
+      <meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+      <Title>Auth - Confirm Email Call</Title>
+      <link rel="stylesheet" href="../assets/normalize.css">
+      <link rel="stylesheet" href="../assets/highlight.styles/github.css">
+      <link rel="stylesheet" href="../assets/style.css">
+      <script src="../assets/jquery-3.2.1.min.js" charset="UTF-8"></script>
+      <script src="../assets/highlight.pack.js" charset="UTF-8"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+    </HEAD>
+    
+    <body>
+      <div class="header">
+        <h1>
+          <span class="product-logo">
+            <img src="../assets/images/logo.png" alt="" class="l">
+            <img src="../assets/images/logo-small.png" alt="" class="s">
+          </span>
+          <span class="article__title">
+            <span class="resource-title">Auth</span>
+            <br>Confirm Email Call</span>
+        </h1>
+      </div>
+    
+      <div class="article">
+    
+        <div class="article__content">
+          <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/link.png">URL</h3>
+          <pre class="url">api/Auth/ConfirmEmail?token={token}&id={id}</pre>
+          <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/cube.png">Method</h3>
+          <p>
+            <span class="method get">GET</span>
+          </p>
+          <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
+            <ul>
+              <li><b>token</b> - email confirmation token</li>
+              <li><b>id</b> - user id</li>
+            </ul>
+          <!--<h3 class="ref-title">
+                <img class="icon ref" src="../assets/images/icons/security.png">Required Security</h3>
+              <p>Authenticated, Admin role ONLY!
+              </p>-->
+          <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/tick.png">Success Response</h3>
+          <ul>
+            <li>
+              Code:
+              <pre>200 OK</pre>
+            </li>
+            <li>
+              Content:
+              <pre>None</pre>
+            </li>
+          </ul>
+          <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/curl.png">Sample cURL</h3>
+          <pre><code>curl -X GET --header 'Accept: application/json' 'http://10.0.2.18:4001/api/Auth/ConfirmEmail?token={token}&id={id}'</code></pre>
+          
+    
+        </div>
+    
+    
+      </div>
+    
+      <div class="footer">
+        <span class="copy">Copyright &copy; 2017 | GentleCode LLC | All Rights Reserved</span>
+      </div>
+      <script src="../assets/script.js" defer></script>
+    </BODY>
+    
+    </HTML>

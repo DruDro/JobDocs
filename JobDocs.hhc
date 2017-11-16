@@ -83,27 +83,26 @@
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
 					<param name="Name" value="API Calls">
-					<param name="Local" value="articles\api-calls.htm">
 					</OBJECT>
 
 					<UL>
 						<LI> <OBJECT type="text/sitemap">
 							<param name="Name" value="Auth">
-							<param name="Local" value="articles\auth-resource.htm">
+							<param name="Local" value="articles\auth.htm">
 							</OBJECT>
 
 							<UL>
 								<LI> <OBJECT type="text/sitemap">
 									<param name="Name" value="Recover Password">
-									<param name="Local" value="articles\recover-password.htm">
+									<param name="Local" value="articles\auth-recoverpassword.htm">
 									</OBJECT>
 								<LI> <OBJECT type="text/sitemap">
 									<param name="Name" value="Confirm Email">
-									<param name="Local" value="articles\confirm-email.htm">
+									<param name="Local" value="articles\auth-confirmemail.htm">
 									</OBJECT>
 								<LI> <OBJECT type="text/sitemap">
 									<param name="Name" value="Unsubscribe">
-									<param name="Local" value="articles\unsubscribe.htm">
+									<param name="Local" value="articles\auth-unsubscribe.htm">
 									</OBJECT>
 							</UL>
 							
@@ -137,18 +136,18 @@
 
 							<UL>
 								<LI> <OBJECT type="text/sitemap">
-									<param name="Name" value="Add a Category Image">
+									<param name="Name" value="Add a CategoryImage">
 									<param name="Local" value="articles\categoryimage-resource-create.htm">
 									</OBJECT>
 								<LI> <OBJECT type="text/sitemap">
-									<param name="Name" value="Delete a Category Image">
+									<param name="Name" value="Delete a CategoryImage">
 									<param name="Local" value="articles\categoryimage-resource-delete.htm">
 									</OBJECT>
 							</UL>
 							
 						<LI> <OBJECT type="text/sitemap">
 							<param name="Name" value="CategoryItems">
-							<param name="Local" value="articles\category-items-resource.htm">
+							<param name="Local" value="articles\categoryitems-resource.htm">
 							</OBJECT>
 
 							<UL>
@@ -192,7 +191,7 @@
 						<UL>
 							<LI> <OBJECT type="text/sitemap">
 								<param name="Name" value="Add JobResourceItems">
-								<param name="Local" value="articles\jobresourceitems-create.htm">
+								<param name="Local" value="articles\jobresourceitems-resource-create.htm">
 								</OBJECT>
 						</UL>
 					<LI> <OBJECT type="text/sitemap">
@@ -217,25 +216,25 @@
 
 						<LI> <OBJECT type="text/sitemap">
 							<param name="Name" value="Jobs">
-							<param name="Local" value="articles\job-resource.htm">
+							<param name="Local" value="articles\jobs-resource.htm">
 							</OBJECT>
 
 							<UL>
 								<LI> <OBJECT type="text/sitemap">
 									<param name="Name" value="Get all Jobs">
-									<param name="Local" value="articles\job-resource-get-all.htm">
+									<param name="Local" value="articles\jobs-resource-get-all.htm">
 									</OBJECT>
 								<LI> <OBJECT type="text/sitemap">
 									<param name="Name" value="Get a Specific Job">
-									<param name="Local" value="articles\job-resource-get-spec.htm">
+									<param name="Local" value="articles\jobs-resource-get-spec.htm">
 									</OBJECT>
 								<LI> <OBJECT type="text/sitemap">
 									<param name="Name" value="Create a New Job">
-									<param name="Local" value="articles\job-resource-create.htm">
+									<param name="Local" value="articles\jobs-resource-create.htm">
 									</OBJECT>
 								<LI> <OBJECT type="text/sitemap">
 									<param name="Name" value="Update a Specific Job">
-									<param name="Local" value="articles\job-resource-update.htm">
+									<param name="Local" value="articles\jobs-resource-update.htm">
 									</OBJECT>
 							</UL>
 						<LI> <OBJECT type="text/sitemap">
@@ -250,7 +249,7 @@
 									</OBJECT>
 								<LI> <OBJECT type="text/sitemap">
 									<param name="Name" value="Delete a Notification">
-									<param name="Local" value="articles\notifications-delete.htm">
+									<param name="Local" value="articles\notifications-resource-delete.htm">
 									</OBJECT>
 							</UL>
 						<LI> <OBJECT type="text/sitemap">
@@ -260,12 +259,12 @@
 
 							<UL>
 								<LI> <OBJECT type="text/sitemap">
-									<param name="Name" value="Delete a UserImage">
-									<param name="Local" value="articles\userimages-resource-delete.htm">
+									<param name="Name" value="Create a UserImage">
+									<param name="Local" value="articles\userimages-resource-create.htm">
 									</OBJECT>
 								<LI> <OBJECT type="text/sitemap">
-									<param name="Name" value="Create a UserImage">
-									<param name="Local" value="articles\userimages-create.htm">
+									<param name="Name" value="Delete a UserImage">
+									<param name="Local" value="articles\userimages-resource-delete.htm">
 									</OBJECT>
 							</UL>
 						<LI> <OBJECT type="text/sitemap">
@@ -276,11 +275,11 @@
 							<UL>
 								<LI> <OBJECT type="text/sitemap">
 									<param name="Name" value="Create UserJobs">
-									<param name="Local" value="articles\userjobs-create.htm">
+									<param name="Local" value="articles\userjobs-resource-create.htm">
 									</OBJECT>
 								<LI> <OBJECT type="text/sitemap">
 									<param name="Name" value="Update UserJobs">
-									<param name="Local" value="articles\userjobs-resource-delete.htm">
+									<param name="Local" value="articles\userjobs-resource-update.htm">
 									</OBJECT>
 								<LI> <OBJECT type="text/sitemap">
 									<param name="Name" value="Delete a UserJob">
@@ -301,15 +300,15 @@
 								</OBJECT>
 							<LI> <OBJECT type="text/sitemap">
 								<param name="Name" value="Create a New User">
-								<param name="Local" value="articles\user-resource-create.htm">
-								</OBJECT>
-							<LI> <OBJECT type="text/sitemap">
-								<param name="Name" value="Delete a Specific User">
-								<param name="Local" value="articles\user-resource-delete.htm">
+								<param name="Local" value="articles\users-resource-create.htm">
 								</OBJECT>
 							<LI> <OBJECT type="text/sitemap">
 								<param name="Name" value="Update a Specific User">
-								<param name="Local" value="articles\user-resource-update.htm">
+								<param name="Local" value="articles\users-resource-update.htm">
+								</OBJECT>
+							<LI> <OBJECT type="text/sitemap">
+								<param name="Name" value="Delete a Specific User">
+								<param name="Local" value="articles\users-resource-delete.htm">
 								</OBJECT>
 						</UL>
 

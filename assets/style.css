@@ -14,9 +14,6 @@ body {
     width: 1200px;
     max-width:100%;
 }
-a {
-    color:#f68d1e;
-}
 
 span.link {
     font-weight:700;
@@ -85,7 +82,31 @@ pre {
     overflow-x:auto;
     padding:0;
 }
-.js-toggle-code + pre {
+.js-toggle-code {
+    padding: 3px 25px 3px 0;
+    position:relative;
+    display:inline-block;
+    text-decoration:none;
+}
+.js-toggle-code:after {    
+    content:"";
+    display:block;
+    position:absolute;
+    right: 3px;
+    top: 9px;
+    width: 10px;
+    height: 10px;
+    border:2px solid #454545;
+    border-top:0;
+    border-left:0;
+    transform:rotate(-135deg);
+}
+.js-toggle-code.collapsed:after {
+    right: 3px;
+    top: 3px;
+    transform:rotate(45deg);
+}
+.js-pre.collapsed{
     display:none;
 }
 pre.url {
@@ -99,7 +120,41 @@ ul {
     padding:0 0 0 20px;
 }
 
-
+table.calls {
+    width:100%;
+    border-collapse: collapse;
+}
+table.calls td {
+    padding: 5px 10px;
+    box-shadow: 0 0 0 1px #aaa inset;
+    border-bottom:10px solid #f5f5f5;
+    background:#fff
+}
+table.calls tr:last-child td {
+    border-bottom:0;
+}
+table.calls a {
+    text-decoration:none;
+}
+.method {
+    width:80px;
+    text-align:center;
+    color:#fff;
+    box-shadow:none !important;
+    padding: 5px 10px;
+}
+.method.get {
+    background:#0f6ab4;
+}
+.method.post {
+    background:#10a54a;
+}
+.method.put {
+    background:#c5862b;
+}
+.method.delete {
+    background:#a41e22;
+}
 .ref-title {
     padding-top:15px;
 }
