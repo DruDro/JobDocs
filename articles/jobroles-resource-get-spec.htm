@@ -3,7 +3,7 @@
 <HEAD>
   <meta http-equiv="X-UA-Compatible" content="IE=9">
   <meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
-  <Title>Jobs - Get A Specific Job Call</Title>
+  <Title>JobRoles - Get A Specific Job Role Call</Title>
   <link rel="stylesheet" href="../assets/normalize.css">
   <link rel="stylesheet" href="../assets/highlight.styles/github.css">
   <link rel="stylesheet" href="../assets/style.css">
@@ -20,15 +20,15 @@
         <img src="../assets/images/logo-small.png" alt="" class="s">
       </span>
       <span class="article__title">
-        <span class="resource-title">Jobs</span>
-        <br>Get A Specific Job Call</span>
+        <span class="resource-title">JobRoles</span>
+        <br>Get A Specific Job Role Call</span>
     </h1>
   </div>
 
   <div class="article">
 
     <div class="article__content">
-      <p>Returns a specific Job object in the system</p>
+      <p>Returns a specific JobRole object in the system</p>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/link.png">URL</h3>
       <pre class="url">api/Jobs/{id}</pre>
@@ -41,7 +41,7 @@
         <img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
       <ul>
         <li>
-          <b>id</b> - id of a specific Job to get</li>
+          <b>id</b> - id of a specific JobRole to get</li>
       </ul>
       <!--<h3 class="ref-title">
             <img class="icon ref" src="../assets/images/icons/security.png">Required Security</h3>
@@ -56,12 +56,12 @@
         </li>
         <li>
           Content:
-          <pre>The created Serialized JobDTO</pre>
+          <pre>The Serialized JobRoleDTO</pre>
         </li>
       </ul>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/curl.png">Sample cURL</h3>
-      <pre><code>curl -X GET --header 'Accept: application/json' 'http://10.0.2.18:4001/api/Jobs/e5d8efbf-5bc9-4535-b824-7602689c18b5'</code></pre>
+      <pre><code>curl -X GET --header 'Accept: application/json' 'http://10.0.2.18:4001/api/JobRoles/22b725ef-bc29-4547-9fa9-31623f6c39d1'</code></pre>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/curly.png">
         <a href="#" class="js-toggle-code collapsed">Sample Value</a>
@@ -83,13 +83,13 @@
           "JobId": "string",
           "JobRoleId": "string",
           "Id": "string",
-          "UpdatedAt": "2017-11-15T16:17:51.339Z",
-          "CreatedAt": "2017-11-15T16:17:51.339Z"
+          "UpdatedAt": "2017-11-16T14:47:03.836Z",
+          "CreatedAt": "2017-11-16T14:47:03.836Z"
         }
       ],
       "Id": "string",
-      "UpdatedAt": "2017-11-15T16:17:51.339Z",
-      "CreatedAt": "2017-11-15T16:17:51.339Z"
+      "UpdatedAt": "2017-11-16T14:47:03.836Z",
+      "CreatedAt": "2017-11-16T14:47:03.836Z"
     }
   ],
   "JobResources": [
@@ -101,8 +101,8 @@
       "JobId": "string",
       "JobRoleId": "string",
       "Id": "string",
-      "UpdatedAt": "2017-11-15T16:17:51.339Z",
-      "CreatedAt": "2017-11-15T16:17:51.339Z"
+      "UpdatedAt": "2017-11-16T14:47:03.836Z",
+      "CreatedAt": "2017-11-16T14:47:03.836Z"
     }
   ],
   "AllowedCategoryTypes": [
@@ -144,13 +144,13 @@
         ]
       },
       "Id": "string",
-      "UpdatedAt": "2017-11-15T16:17:51.339Z",
-      "CreatedAt": "2017-11-15T16:17:51.339Z"
+      "UpdatedAt": "2017-11-16T14:47:03.836Z",
+      "CreatedAt": "2017-11-16T14:47:03.836Z"
     }
   ],
   "Id": "string",
-  "UpdatedAt": "2017-11-15T16:17:51.339Z",
-  "CreatedAt": "2017-11-15T16:17:51.339Z"
+  "UpdatedAt": "2017-11-16T14:47:03.836Z",
+  "CreatedAt": "2017-11-16T14:47:03.836Z"
 }</code></pre>
 
       <h3 class="ref-title">
@@ -158,66 +158,60 @@
         <a href="#" class="js-toggle-code collapsed">Model</a>
       </h3>
 
-      <pre class="js-pre collapsed"><code>JobDTO{
-    Name (string, optional),
-    JobRoles (Array[JobRoleDTO
-    ], optional),
-    JobResources (Array[JobResourceDTO
-    ], optional),
-    AllowedCategoryTypes (Array[CategoryTypeDTO
-    ], optional),
-    Categories (Array[CategoryDTO
-    ], optional),
-    Id (string, optional),
-    UpdatedAt (string, optional),
-    CreatedAt (string, optional)
+      <pre class="js-pre collapsed"><code>JobDTO {
+Name (string, optional),
+  JobRoles (Array[JobRoleDTO], optional),
+  JobResources (Array[JobResourceDTO], optional),
+  AllowedCategoryTypes (Array[CategoryTypeDTO], optional),
+  Categories (Array[CategoryDTO], optional),
+  Id (string, optional),
+  UpdatedAt (string, optional),
+  CreatedAt (string, optional)
 }
-JobRoleDTO{
-    Name (string, optional),
-    Step (integer, optional),
-    Value (string, optional),
-    JobId (string, optional),
-    JobResources (Array[JobResourceDTO
-    ], optional),
-    Id (string, optional),
-    UpdatedAt (string, optional),
-    CreatedAt (string, optional)
+JobRoleDTO {
+  Name (string, optional),
+  Step (integer, optional),
+  Value (string, optional),
+  JobId (string, optional),
+  JobResources (Array[JobResourceDTO], optional),
+  Id (string, optional),
+  UpdatedAt (string, optional),
+  CreatedAt (string, optional)
 }
-JobResourceDTO{
-    Name (string, optional),
-    ResourceLinkUri (string, optional),
-    ResourceImageBlobUri (string, optional),
-    DisplaySubTitle (string, optional),
-    JobId (string, optional),
-    JobRoleId (string, optional),
-    Id (string, optional),
-    UpdatedAt (string, optional),
-    CreatedAt (string, optional)
+JobResourceDTO {
+  Name (string, optional),
+  ResourceLinkUri (string, optional),
+  ResourceImageBlobUri (string, optional),
+  DisplaySubTitle (string, optional),
+  JobId (string, optional),
+  JobRoleId (string, optional),
+  Id (string, optional),
+  UpdatedAt (string, optional),
+  CreatedAt (string, optional)
 }
-CategoryTypeDTO{
-    Id (integer, optional),
-    Name (string, optional),
-    IsUserCreatable (boolean, optional),
-    MaxHourTrackers (integer, optional),
-    HourTrackerTypes (Array[HourTrackerTypeDTO
-    ], optional)
+CategoryTypeDTO {
+  Id (integer, optional),
+  Name (string, optional),
+  IsUserCreatable (boolean, optional),
+  MaxHourTrackers (integer, optional),
+  HourTrackerTypes (Array[HourTrackerTypeDTO], optional)
 }
-CategoryDTO{
-    Name (string, optional),
-    JobId (string, optional),
-    IsDefaultSuggestion (boolean, optional),
-    IsSystemCategory (boolean, optional),
-    CategoryType (CategoryTypeDTO, optional),
-    Id (string, optional),
-    UpdatedAt (string, optional),
-    CreatedAt (string, optional)
+CategoryDTO {
+  Name (string, optional),
+  JobId (string, optional),
+  IsDefaultSuggestion (boolean, optional),
+  IsSystemCategory (boolean, optional),
+  CategoryType (CategoryTypeDTO, optional),
+  Id (string, optional),
+  UpdatedAt (string, optional),
+  CreatedAt (string, optional)
 }
-HourTrackerTypeDTO{
-    Id (integer, optional),
-    SortOrder (integer, optional),
-    Name (string, optional),
-    DisplayName (string, optional),
-    MaxDisplayDecimals (integer, optional)
+HourTrackerTypeDTO {
+  Id (integer, optional),
+  SortOrder (integer, optional),
+  Name (string, optional),
+  DisplayName (string, optional),
+  MaxDisplayDecimals (integer, optional)
 }</code></pre>
     </div>
 

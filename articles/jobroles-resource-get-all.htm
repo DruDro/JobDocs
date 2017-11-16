@@ -3,7 +3,7 @@
 <HEAD>
   <meta http-equiv="X-UA-Compatible" content="IE=9">
   <meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
-  <Title>Jobs - Get All Jobs Call</Title>
+  <Title>JobRoles - Get All Job Roles Call</Title>
   <link rel="stylesheet" href="../assets/normalize.css">
   <link rel="stylesheet" href="../assets/highlight.styles/github.css">
   <link rel="stylesheet" href="../assets/style.css">
@@ -20,18 +20,18 @@
         <img src="../assets/images/logo-small.png" alt="" class="s">
       </span>
       <span class="article__title">
-        <span class="resource-title">Jobs</span>
-        <br>Get All Jobs Call</span>
+        <span class="resource-title">JobRoles</span>
+        <br>Get All Job Roles Call</span>
     </h1>
   </div>
 
   <div class="article">
 
     <div class="article__content">
-      <p>Returns all Job objects in the system</p>
+      <p>Returns all JobRole objects in the system</p>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/link.png">URL</h3>
-      <pre class="url">api/Jobs</pre>
+      <pre class="url">api/JobRoles</pre>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/cube.png">Method</h3>
       <p>
@@ -53,12 +53,12 @@
         </li>
         <li>
           Content:
-          <pre>The Serialized JobDTOs</pre>
+          <pre>The Serialized JobRoleDTOs</pre>
         </li>
       </ul>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/curl.png">Sample cURL</h3>
-      <pre><code>curl -X GET --header 'Accept: application/json' 'http://10.0.2.18:4001/api/Jobs'</code></pre>
+      <pre><code>curl -X GET --header 'Accept: application/json' 'http://10.0.2.18:4001/api/JobRoles'</code></pre>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/curly.png">
         <a href="#" class="js-toggle-code collapsed">Sample Value</a>
@@ -66,30 +66,9 @@
       <pre class="js-pre collapsed"><code>[
   {
     "Name": "string",
-    "JobRoles": [
-      {
-        "Name": "string",
-        "Step": 0,
-        "Value": "string",
-        "JobId": "string",
-        "JobResources": [
-          {
-            "Name": "string",
-            "ResourceLinkUri": "string",
-            "ResourceImageBlobUri": "string",
-            "DisplaySubTitle": "string",
-            "JobId": "string",
-            "JobRoleId": "string",
-            "Id": "string",
-            "UpdatedAt": "2017-11-15T16:17:51.277Z",
-            "CreatedAt": "2017-11-15T16:17:51.277Z"
-          }
-        ],
-        "Id": "string",
-        "UpdatedAt": "2017-11-15T16:17:51.277Z",
-        "CreatedAt": "2017-11-15T16:17:51.277Z"
-      }
-    ],
+    "Step": 0,
+    "Value": "string",
+    "JobId": "string",
     "JobResources": [
       {
         "Name": "string",
@@ -99,56 +78,13 @@
         "JobId": "string",
         "JobRoleId": "string",
         "Id": "string",
-        "UpdatedAt": "2017-11-15T16:17:51.277Z",
-        "CreatedAt": "2017-11-15T16:17:51.277Z"
-      }
-    ],
-    "AllowedCategoryTypes": [
-      {
-        "Id": 0,
-        "Name": "string",
-        "IsUserCreatable": true,
-        "MaxHourTrackers": 0,
-        "HourTrackerTypes": [
-          {
-            "Id": 0,
-            "SortOrder": 0,
-            "Name": "string",
-            "DisplayName": "string",
-            "MaxDisplayDecimals": 0
-          }
-        ]
-      }
-    ],
-    "Categories": [
-      {
-        "Name": "string",
-        "JobId": "string",
-        "IsDefaultSuggestion": true,
-        "IsSystemCategory": true,
-        "CategoryType": {
-          "Id": 0,
-          "Name": "string",
-          "IsUserCreatable": true,
-          "MaxHourTrackers": 0,
-          "HourTrackerTypes": [
-            {
-              "Id": 0,
-              "SortOrder": 0,
-              "Name": "string",
-              "DisplayName": "string",
-              "MaxDisplayDecimals": 0
-            }
-          ]
-        },
-        "Id": "string",
-        "UpdatedAt": "2017-11-15T16:17:51.277Z",
-        "CreatedAt": "2017-11-15T16:17:51.277Z"
+        "UpdatedAt": "2017-11-16T14:47:03.789Z",
+        "CreatedAt": "2017-11-16T14:47:03.789Z"
       }
     ],
     "Id": "string",
-    "UpdatedAt": "2017-11-15T16:17:51.277Z",
-    "CreatedAt": "2017-11-15T16:17:51.277Z"
+    "UpdatedAt": "2017-11-16T14:47:03.789Z",
+    "CreatedAt": "2017-11-16T14:47:03.789Z"
   }
 ]</code></pre>
 
@@ -161,20 +97,6 @@
     Inline Model1
 ]
 Inline Model1 {
-    Name (string, optional),
-    JobRoles (Array[JobRoleDTO
-    ], optional),
-    JobResources (Array[JobResourceDTO
-    ], optional),
-    AllowedCategoryTypes (Array[CategoryTypeDTO
-    ], optional),
-    Categories (Array[CategoryDTO
-    ], optional),
-    Id (string, optional),
-    UpdatedAt (string, optional),
-    CreatedAt (string, optional)
-}
-JobRoleDTO{
     Name (string, optional),
     Step (integer, optional),
     Value (string, optional),
@@ -195,31 +117,6 @@ JobResourceDTO{
     Id (string, optional),
     UpdatedAt (string, optional),
     CreatedAt (string, optional)
-}
-CategoryTypeDTO{
-    Id (integer, optional),
-    Name (string, optional),
-    IsUserCreatable (boolean, optional),
-    MaxHourTrackers (integer, optional),
-    HourTrackerTypes (Array[HourTrackerTypeDTO
-    ], optional)
-}
-CategoryDTO{
-    Name (string, optional),
-    JobId (string, optional),
-    IsDefaultSuggestion (boolean, optional),
-    IsSystemCategory (boolean, optional),
-    CategoryType (CategoryTypeDTO, optional),
-    Id (string, optional),
-    UpdatedAt (string, optional),
-    CreatedAt (string, optional)
-}
-HourTrackerTypeDTO{
-    Id (integer, optional),
-    SortOrder (integer, optional),
-    Name (string, optional),
-    DisplayName (string, optional),
-    MaxDisplayDecimals (integer, optional)
 }</code></pre>
     </div>
 

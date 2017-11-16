@@ -3,7 +3,7 @@
 <HEAD>
   <meta http-equiv="X-UA-Compatible" content="IE=9">
   <meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
-  <Title>Jobs - Update Jobs Call</Title>
+  <Title>UserJobs - Update UserJobs Call</Title>
   <link rel="stylesheet" href="../assets/normalize.css">
   <link rel="stylesheet" href="../assets/highlight.styles/github.css">
   <link rel="stylesheet" href="../assets/style.css">
@@ -20,18 +20,18 @@
         <img src="../assets/images/logo-small.png" alt="" class="s">
       </span>
       <span class="article__title">
-        <span class="resource-title">Jobs</span>
-        <br>Update A Jobs Call</span>
+        <span class="resource-title">UserJobs</span>
+        <br>Update UserJobs Call</span>
     </h1>
   </div>
 
   <div class="article">
 
     <div class="article__content">
-      <p>Updates Jobs object in the system</p>
+      <p>Updates UserJobs object in the system</p>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/link.png">URL</h3>
-      <pre class="url">api/Jobs</pre>
+      <pre class="url">api/UserJobs</pre>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/cube.png">Method</h3>
       <p>
@@ -39,7 +39,7 @@
       </p>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
-        <ul><li><b>job</b> - JobDTO</li></ul>
+        <ul><li><b>job</b> - UserJobDTO</li></ul>
       <!--<h3 class="ref-title">
             <img class="icon ref" src="../assets/images/icons/security.png">Required Security</h3>
           <p>Authenticated, Admin role ONLY!
@@ -53,76 +53,429 @@
         </li>
         <li>
           Content:
-          <pre>The updated Serialized JobDTO</pre>
+          <pre>The updated Serialized UserJobDTO</pre>
         </li>
       </ul>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/curl.png">Sample cURL</h3>
-      <pre><code>curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d 'job' 'http://10.0.2.18:4001/api/Jobs'</code></pre>
+      <pre><code>curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d 'UserJobDTO' 'http://10.0.2.18:4001/api/UserJobs'</code></pre>
       <h3 class="ref-title">
         <img class="icon ref" src="../assets/images/icons/curly.png">
         <a href="#" class="js-toggle-code collapsed">Sample Value</a>
       </h3>
       <pre class="js-pre collapsed"><code>{
-  "Name": "string",
-  "JobRoles": [
-    {
-      "Name": "string",
-      "Step": 0,
-      "Value": "string",
-      "JobId": "string",
-      "JobResources": [
-        {
+  "User": {
+    "FullName": "string",
+    "ZipCode": "string",
+    "Password": "string",
+    "MemberPassword": "string",
+    "EmailVerificationToken": "string",
+    "NotificationTriggerTimeDays": 0,
+    "NotificationSnoozeTriggerTimeDays": 0,
+    "NotificationBadge": 0,
+    "ProfilePicBlobUri": "string",
+    "GoogleId": "string",
+    "FacebookId": "string",
+    "UserJobs": [
+      {}
+    ],
+    "Attributes": [
+      {
+        "User": {},
+        "EntityId": "string",
+        "Value": "string",
+        "Id": "string",
+        "Version": "string",
+        "CreatedAt": "2017-11-16T14:47:04.018Z",
+        "UpdatedAt": "2017-11-16T14:47:04.018Z",
+        "Deleted": true
+      }
+    ],
+    "Email": "string",
+    "EmailConfirmed": true,
+    "PasswordHash": "string",
+    "SecurityStamp": "string",
+    "PhoneNumber": "string",
+    "PhoneNumberConfirmed": true,
+    "TwoFactorEnabled": true,
+    "LockoutEndDateUtc": "2017-11-16T14:47:04.018Z",
+    "LockoutEnabled": true,
+    "AccessFailedCount": 0,
+    "Roles": [
+      {
+        "UserId": "string",
+        "RoleId": "string"
+      }
+    ],
+    "Claims": [
+      {
+        "Id": 0,
+        "UserId": "string",
+        "ClaimType": "string",
+        "ClaimValue": "string"
+      }
+    ],
+    "Logins": [
+      {
+        "LoginProvider": "string",
+        "ProviderKey": "string",
+        "UserId": "string"
+      }
+    ],
+    "Id": "string",
+    "UserName": "string"
+  },
+  "Job": {
+    "Name": "string",
+    "JobRoles": [
+      {
+        "Name": "string",
+        "Step": 0,
+        "Value": "string",
+        "Job": {},
+        "JobResources": [
+          {
+            "Name": "string",
+            "ResourceLinkUri": "string",
+            "ResourceImageBlobUri": "string",
+            "DisplaySubTitle": "string",
+            "Job": {},
+            "JobRole": {},
+            "Id": "string",
+            "Version": "string",
+            "CreatedAt": "2017-11-16T14:47:04.018Z",
+            "UpdatedAt": "2017-11-16T14:47:04.018Z",
+            "Deleted": true
+          }
+        ],
+        "UserJobs": [
+          {}
+        ],
+        "Id": "string",
+        "Version": "string",
+        "CreatedAt": "2017-11-16T14:47:04.018Z",
+        "UpdatedAt": "2017-11-16T14:47:04.018Z",
+        "Deleted": true
+      }
+    ],
+    "JobResources": [
+      {
+        "Name": "string",
+        "ResourceLinkUri": "string",
+        "ResourceImageBlobUri": "string",
+        "DisplaySubTitle": "string",
+        "Job": {},
+        "JobRole": {
           "Name": "string",
-          "ResourceLinkUri": "string",
-          "ResourceImageBlobUri": "string",
-          "DisplaySubTitle": "string",
-          "JobId": "string",
-          "JobRoleId": "string",
+          "Step": 0,
+          "Value": "string",
+          "Job": {},
+          "JobResources": [
+            {}
+          ],
+          "UserJobs": [
+            {}
+          ],
           "Id": "string",
-          "UpdatedAt": "2017-11-15T16:17:51.311Z",
-          "CreatedAt": "2017-11-15T16:17:51.311Z"
-        }
-      ],
-      "Id": "string",
-      "UpdatedAt": "2017-11-15T16:17:51.311Z",
-      "CreatedAt": "2017-11-15T16:17:51.311Z"
-    }
-  ],
-  "JobResources": [
-    {
-      "Name": "string",
-      "ResourceLinkUri": "string",
-      "ResourceImageBlobUri": "string",
-      "DisplaySubTitle": "string",
-      "JobId": "string",
-      "JobRoleId": "string",
-      "Id": "string",
-      "UpdatedAt": "2017-11-15T16:17:51.311Z",
-      "CreatedAt": "2017-11-15T16:17:51.311Z"
-    }
-  ],
-  "AllowedCategoryTypes": [
-    {
-      "Id": 0,
-      "Name": "string",
-      "IsUserCreatable": true,
-      "MaxHourTrackers": 0,
-      "HourTrackerTypes": [
-        {
+          "Version": "string",
+          "CreatedAt": "2017-11-16T14:47:04.018Z",
+          "UpdatedAt": "2017-11-16T14:47:04.018Z",
+          "Deleted": true
+        },
+        "Id": "string",
+        "Version": "string",
+        "CreatedAt": "2017-11-16T14:47:04.018Z",
+        "UpdatedAt": "2017-11-16T14:47:04.018Z",
+        "Deleted": true
+      }
+    ],
+    "AllowedCategoryTypes": [
+      {
+        "Id": 0,
+        "Name": "string",
+        "IsUserCreatable": true,
+        "MaxHourTrackers": 0,
+        "HourTrackerTypes": [
+          {
+            "Id": 0,
+            "SortOrder": 0,
+            "Name": "string",
+            "DisplayName": "string",
+            "MaxDisplayDecimals": 0,
+            "CategoryTypes": [
+              {}
+            ]
+          }
+        ],
+        "AllowedinJobs": [
+          {}
+        ]
+      }
+    ],
+    "Categories": [
+      {
+        "Name": "string",
+        "Job": {},
+        "IsDefaultSuggestion": true,
+        "IsSystemCategory": true,
+        "CategoryType": {
           "Id": 0,
-          "SortOrder": 0,
           "Name": "string",
-          "DisplayName": "string",
-          "MaxDisplayDecimals": 0
-        }
-      ]
-    }
-  ],
+          "IsUserCreatable": true,
+          "MaxHourTrackers": 0,
+          "HourTrackerTypes": [
+            {
+              "Id": 0,
+              "SortOrder": 0,
+              "Name": "string",
+              "DisplayName": "string",
+              "MaxDisplayDecimals": 0,
+              "CategoryTypes": [
+                {}
+              ]
+            }
+          ],
+          "AllowedinJobs": [
+            {}
+          ]
+        },
+        "UserJobs": [
+          {}
+        ],
+        "Items": [
+          {
+            "Name": "string",
+            "User": {
+              "FullName": "string",
+              "ZipCode": "string",
+              "Password": "string",
+              "MemberPassword": "string",
+              "EmailVerificationToken": "string",
+              "NotificationTriggerTimeDays": 0,
+              "NotificationSnoozeTriggerTimeDays": 0,
+              "NotificationBadge": 0,
+              "ProfilePicBlobUri": "string",
+              "GoogleId": "string",
+              "FacebookId": "string",
+              "UserJobs": [
+                {}
+              ],
+              "Attributes": [
+                {
+                  "User": {},
+                  "EntityId": "string",
+                  "Value": "string",
+                  "Id": "string",
+                  "Version": "string",
+                  "CreatedAt": "2017-11-16T14:47:04.018Z",
+                  "UpdatedAt": "2017-11-16T14:47:04.018Z",
+                  "Deleted": true
+                }
+              ],
+              "Email": "string",
+              "EmailConfirmed": true,
+              "PasswordHash": "string",
+              "SecurityStamp": "string",
+              "PhoneNumber": "string",
+              "PhoneNumberConfirmed": true,
+              "TwoFactorEnabled": true,
+              "LockoutEndDateUtc": "2017-11-16T14:47:04.018Z",
+              "LockoutEnabled": true,
+              "AccessFailedCount": 0,
+              "Roles": [
+                {
+                  "UserId": "string",
+                  "RoleId": "string"
+                }
+              ],
+              "Claims": [
+                {
+                  "Id": 0,
+                  "UserId": "string",
+                  "ClaimType": "string",
+                  "ClaimValue": "string"
+                }
+              ],
+              "Logins": [
+                {
+                  "LoginProvider": "string",
+                  "ProviderKey": "string",
+                  "UserId": "string"
+                }
+              ],
+              "Id": "string",
+              "UserName": "string"
+            },
+            "Category": {},
+            "FileName": "string",
+            "Notes": "string",
+            "NotificationSentAt": "2017-11-16T14:47:04.019Z",
+            "NotificationDismiss": true,
+            "IssueDate": "2017-11-16T14:47:04.019Z",
+            "ExpirationDate": "2017-11-16T14:47:04.019Z",
+            "HourTrackers": [
+              {
+                "HourTrackerType": {
+                  "Id": 0,
+                  "SortOrder": 0,
+                  "Name": "string",
+                  "DisplayName": "string",
+                  "MaxDisplayDecimals": 0,
+                  "CategoryTypes": [
+                    {
+                      "Id": 0,
+                      "Name": "string",
+                      "IsUserCreatable": true,
+                      "MaxHourTrackers": 0,
+                      "HourTrackerTypes": [
+                        {}
+                      ],
+                      "AllowedinJobs": [
+                        {}
+                      ]
+                    }
+                  ]
+                },
+                "CategoryItem": {},
+                "Hours": 0,
+                "Id": "string",
+                "Version": "string",
+                "CreatedAt": "2017-11-16T14:47:04.019Z",
+                "UpdatedAt": "2017-11-16T14:47:04.019Z",
+                "Deleted": true
+              }
+            ],
+            "CategoryItemImages": [
+              {
+                "CategoryItem": {},
+                "BlobUri": "string",
+                "SortOrder": 0,
+                "Id": "string",
+                "Version": "string",
+                "CreatedAt": "2017-11-16T14:47:04.019Z",
+                "UpdatedAt": "2017-11-16T14:47:04.019Z",
+                "Deleted": true
+              }
+            ],
+            "Id": "string",
+            "Version": "string",
+            "CreatedAt": "2017-11-16T14:47:04.019Z",
+            "UpdatedAt": "2017-11-16T14:47:04.019Z",
+            "Deleted": true
+          }
+        ],
+        "Id": "string",
+        "Version": "string",
+        "CreatedAt": "2017-11-16T14:47:04.019Z",
+        "UpdatedAt": "2017-11-16T14:47:04.019Z",
+        "Deleted": true
+      }
+    ],
+    "Id": "string",
+    "Version": "string",
+    "CreatedAt": "2017-11-16T14:47:04.019Z",
+    "UpdatedAt": "2017-11-16T14:47:04.019Z",
+    "Deleted": true
+  },
   "Categories": [
     {
       "Name": "string",
-      "JobId": "string",
+      "Job": {
+        "Name": "string",
+        "JobRoles": [
+          {
+            "Name": "string",
+            "Step": 0,
+            "Value": "string",
+            "Job": {},
+            "JobResources": [
+              {
+                "Name": "string",
+                "ResourceLinkUri": "string",
+                "ResourceImageBlobUri": "string",
+                "DisplaySubTitle": "string",
+                "Job": {},
+                "JobRole": {},
+                "Id": "string",
+                "Version": "string",
+                "CreatedAt": "2017-11-16T14:47:04.019Z",
+                "UpdatedAt": "2017-11-16T14:47:04.019Z",
+                "Deleted": true
+              }
+            ],
+            "UserJobs": [
+              {}
+            ],
+            "Id": "string",
+            "Version": "string",
+            "CreatedAt": "2017-11-16T14:47:04.019Z",
+            "UpdatedAt": "2017-11-16T14:47:04.019Z",
+            "Deleted": true
+          }
+        ],
+        "JobResources": [
+          {
+            "Name": "string",
+            "ResourceLinkUri": "string",
+            "ResourceImageBlobUri": "string",
+            "DisplaySubTitle": "string",
+            "Job": {},
+            "JobRole": {
+              "Name": "string",
+              "Step": 0,
+              "Value": "string",
+              "Job": {},
+              "JobResources": [
+                {}
+              ],
+              "UserJobs": [
+                {}
+              ],
+              "Id": "string",
+              "Version": "string",
+              "CreatedAt": "2017-11-16T14:47:04.019Z",
+              "UpdatedAt": "2017-11-16T14:47:04.019Z",
+              "Deleted": true
+            },
+            "Id": "string",
+            "Version": "string",
+            "CreatedAt": "2017-11-16T14:47:04.019Z",
+            "UpdatedAt": "2017-11-16T14:47:04.019Z",
+            "Deleted": true
+          }
+        ],
+        "AllowedCategoryTypes": [
+          {
+            "Id": 0,
+            "Name": "string",
+            "IsUserCreatable": true,
+            "MaxHourTrackers": 0,
+            "HourTrackerTypes": [
+              {
+                "Id": 0,
+                "SortOrder": 0,
+                "Name": "string",
+                "DisplayName": "string",
+                "MaxDisplayDecimals": 0,
+                "CategoryTypes": [
+                  {}
+                ]
+              }
+            ],
+            "AllowedinJobs": [
+              {}
+            ]
+          }
+        ],
+        "Categories": [
+          {}
+        ],
+        "Id": "string",
+        "Version": "string",
+        "CreatedAt": "2017-11-16T14:47:04.019Z",
+        "UpdatedAt": "2017-11-16T14:47:04.019Z",
+        "Deleted": true
+      },
       "IsDefaultSuggestion": true,
       "IsSystemCategory": true,
       "CategoryType": {
@@ -136,18 +489,736 @@
             "SortOrder": 0,
             "Name": "string",
             "DisplayName": "string",
-            "MaxDisplayDecimals": 0
+            "MaxDisplayDecimals": 0,
+            "CategoryTypes": [
+              {}
+            ]
+          }
+        ],
+        "AllowedinJobs": [
+          {
+            "Name": "string",
+            "JobRoles": [
+              {
+                "Name": "string",
+                "Step": 0,
+                "Value": "string",
+                "Job": {},
+                "JobResources": [
+                  {
+                    "Name": "string",
+                    "ResourceLinkUri": "string",
+                    "ResourceImageBlobUri": "string",
+                    "DisplaySubTitle": "string",
+                    "Job": {},
+                    "JobRole": {},
+                    "Id": "string",
+                    "Version": "string",
+                    "CreatedAt": "2017-11-16T14:47:04.019Z",
+                    "UpdatedAt": "2017-11-16T14:47:04.019Z",
+                    "Deleted": true
+                  }
+                ],
+                "UserJobs": [
+                  {}
+                ],
+                "Id": "string",
+                "Version": "string",
+                "CreatedAt": "2017-11-16T14:47:04.019Z",
+                "UpdatedAt": "2017-11-16T14:47:04.019Z",
+                "Deleted": true
+              }
+            ],
+            "JobResources": [
+              {
+                "Name": "string",
+                "ResourceLinkUri": "string",
+                "ResourceImageBlobUri": "string",
+                "DisplaySubTitle": "string",
+                "Job": {},
+                "JobRole": {
+                  "Name": "string",
+                  "Step": 0,
+                  "Value": "string",
+                  "Job": {},
+                  "JobResources": [
+                    {}
+                  ],
+                  "UserJobs": [
+                    {}
+                  ],
+                  "Id": "string",
+                  "Version": "string",
+                  "CreatedAt": "2017-11-16T14:47:04.019Z",
+                  "UpdatedAt": "2017-11-16T14:47:04.019Z",
+                  "Deleted": true
+                },
+                "Id": "string",
+                "Version": "string",
+                "CreatedAt": "2017-11-16T14:47:04.019Z",
+                "UpdatedAt": "2017-11-16T14:47:04.019Z",
+                "Deleted": true
+              }
+            ],
+            "AllowedCategoryTypes": [
+              {}
+            ],
+            "Categories": [
+              {}
+            ],
+            "Id": "string",
+            "Version": "string",
+            "CreatedAt": "2017-11-16T14:47:04.019Z",
+            "UpdatedAt": "2017-11-16T14:47:04.019Z",
+            "Deleted": true
           }
         ]
       },
+      "UserJobs": [
+        {}
+      ],
+      "Items": [
+        {
+          "Name": "string",
+          "User": {
+            "FullName": "string",
+            "ZipCode": "string",
+            "Password": "string",
+            "MemberPassword": "string",
+            "EmailVerificationToken": "string",
+            "NotificationTriggerTimeDays": 0,
+            "NotificationSnoozeTriggerTimeDays": 0,
+            "NotificationBadge": 0,
+            "ProfilePicBlobUri": "string",
+            "GoogleId": "string",
+            "FacebookId": "string",
+            "UserJobs": [
+              {}
+            ],
+            "Attributes": [
+              {
+                "User": {},
+                "EntityId": "string",
+                "Value": "string",
+                "Id": "string",
+                "Version": "string",
+                "CreatedAt": "2017-11-16T14:47:04.019Z",
+                "UpdatedAt": "2017-11-16T14:47:04.019Z",
+                "Deleted": true
+              }
+            ],
+            "Email": "string",
+            "EmailConfirmed": true,
+            "PasswordHash": "string",
+            "SecurityStamp": "string",
+            "PhoneNumber": "string",
+            "PhoneNumberConfirmed": true,
+            "TwoFactorEnabled": true,
+            "LockoutEndDateUtc": "2017-11-16T14:47:04.019Z",
+            "LockoutEnabled": true,
+            "AccessFailedCount": 0,
+            "Roles": [
+              {
+                "UserId": "string",
+                "RoleId": "string"
+              }
+            ],
+            "Claims": [
+              {
+                "Id": 0,
+                "UserId": "string",
+                "ClaimType": "string",
+                "ClaimValue": "string"
+              }
+            ],
+            "Logins": [
+              {
+                "LoginProvider": "string",
+                "ProviderKey": "string",
+                "UserId": "string"
+              }
+            ],
+            "Id": "string",
+            "UserName": "string"
+          },
+          "Category": {},
+          "FileName": "string",
+          "Notes": "string",
+          "NotificationSentAt": "2017-11-16T14:47:04.019Z",
+          "NotificationDismiss": true,
+          "IssueDate": "2017-11-16T14:47:04.019Z",
+          "ExpirationDate": "2017-11-16T14:47:04.019Z",
+          "HourTrackers": [
+            {
+              "HourTrackerType": {
+                "Id": 0,
+                "SortOrder": 0,
+                "Name": "string",
+                "DisplayName": "string",
+                "MaxDisplayDecimals": 0,
+                "CategoryTypes": [
+                  {
+                    "Id": 0,
+                    "Name": "string",
+                    "IsUserCreatable": true,
+                    "MaxHourTrackers": 0,
+                    "HourTrackerTypes": [
+                      {}
+                    ],
+                    "AllowedinJobs": [
+                      {
+                        "Name": "string",
+                        "JobRoles": [
+                          {
+                            "Name": "string",
+                            "Step": 0,
+                            "Value": "string",
+                            "Job": {},
+                            "JobResources": [
+                              {
+                                "Name": "string",
+                                "ResourceLinkUri": "string",
+                                "ResourceImageBlobUri": "string",
+                                "DisplaySubTitle": "string",
+                                "Job": {},
+                                "JobRole": {},
+                                "Id": "string",
+                                "Version": "string",
+                                "CreatedAt": "2017-11-16T14:47:04.019Z",
+                                "UpdatedAt": "2017-11-16T14:47:04.019Z",
+                                "Deleted": true
+                              }
+                            ],
+                            "UserJobs": [
+                              {}
+                            ],
+                            "Id": "string",
+                            "Version": "string",
+                            "CreatedAt": "2017-11-16T14:47:04.019Z",
+                            "UpdatedAt": "2017-11-16T14:47:04.019Z",
+                            "Deleted": true
+                          }
+                        ],
+                        "JobResources": [
+                          {
+                            "Name": "string",
+                            "ResourceLinkUri": "string",
+                            "ResourceImageBlobUri": "string",
+                            "DisplaySubTitle": "string",
+                            "Job": {},
+                            "JobRole": {
+                              "Name": "string",
+                              "Step": 0,
+                              "Value": "string",
+                              "Job": {},
+                              "JobResources": [
+                                {}
+                              ],
+                              "UserJobs": [
+                                {}
+                              ],
+                              "Id": "string",
+                              "Version": "string",
+                              "CreatedAt": "2017-11-16T14:47:04.022Z",
+                              "UpdatedAt": "2017-11-16T14:47:04.022Z",
+                              "Deleted": true
+                            },
+                            "Id": "string",
+                            "Version": "string",
+                            "CreatedAt": "2017-11-16T14:47:04.022Z",
+                            "UpdatedAt": "2017-11-16T14:47:04.022Z",
+                            "Deleted": true
+                          }
+                        ],
+                        "AllowedCategoryTypes": [
+                          {}
+                        ],
+                        "Categories": [
+                          {}
+                        ],
+                        "Id": "string",
+                        "Version": "string",
+                        "CreatedAt": "2017-11-16T14:47:04.022Z",
+                        "UpdatedAt": "2017-11-16T14:47:04.022Z",
+                        "Deleted": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "CategoryItem": {},
+              "Hours": 0,
+              "Id": "string",
+              "Version": "string",
+              "CreatedAt": "2017-11-16T14:47:04.022Z",
+              "UpdatedAt": "2017-11-16T14:47:04.022Z",
+              "Deleted": true
+            }
+          ],
+          "CategoryItemImages": [
+            {
+              "CategoryItem": {},
+              "BlobUri": "string",
+              "SortOrder": 0,
+              "Id": "string",
+              "Version": "string",
+              "CreatedAt": "2017-11-16T14:47:04.022Z",
+              "UpdatedAt": "2017-11-16T14:47:04.022Z",
+              "Deleted": true
+            }
+          ],
+          "Id": "string",
+          "Version": "string",
+          "CreatedAt": "2017-11-16T14:47:04.022Z",
+          "UpdatedAt": "2017-11-16T14:47:04.022Z",
+          "Deleted": true
+        }
+      ],
       "Id": "string",
-      "UpdatedAt": "2017-11-15T16:17:51.311Z",
-      "CreatedAt": "2017-11-15T16:17:51.311Z"
+      "Version": "string",
+      "CreatedAt": "2017-11-16T14:47:04.022Z",
+      "UpdatedAt": "2017-11-16T14:47:04.022Z",
+      "Deleted": true
+    }
+  ],
+  "JobRoles": [
+    {
+      "Name": "string",
+      "Step": 0,
+      "Value": "string",
+      "Job": {
+        "Name": "string",
+        "JobRoles": [
+          {}
+        ],
+        "JobResources": [
+          {
+            "Name": "string",
+            "ResourceLinkUri": "string",
+            "ResourceImageBlobUri": "string",
+            "DisplaySubTitle": "string",
+            "Job": {},
+            "JobRole": {},
+            "Id": "string",
+            "Version": "string",
+            "CreatedAt": "2017-11-16T14:47:04.022Z",
+            "UpdatedAt": "2017-11-16T14:47:04.022Z",
+            "Deleted": true
+          }
+        ],
+        "AllowedCategoryTypes": [
+          {
+            "Id": 0,
+            "Name": "string",
+            "IsUserCreatable": true,
+            "MaxHourTrackers": 0,
+            "HourTrackerTypes": [
+              {
+                "Id": 0,
+                "SortOrder": 0,
+                "Name": "string",
+                "DisplayName": "string",
+                "MaxDisplayDecimals": 0,
+                "CategoryTypes": [
+                  {}
+                ]
+              }
+            ],
+            "AllowedinJobs": [
+              {}
+            ]
+          }
+        ],
+        "Categories": [
+          {
+            "Name": "string",
+            "Job": {},
+            "IsDefaultSuggestion": true,
+            "IsSystemCategory": true,
+            "CategoryType": {
+              "Id": 0,
+              "Name": "string",
+              "IsUserCreatable": true,
+              "MaxHourTrackers": 0,
+              "HourTrackerTypes": [
+                {
+                  "Id": 0,
+                  "SortOrder": 0,
+                  "Name": "string",
+                  "DisplayName": "string",
+                  "MaxDisplayDecimals": 0,
+                  "CategoryTypes": [
+                    {}
+                  ]
+                }
+              ],
+              "AllowedinJobs": [
+                {}
+              ]
+            },
+            "UserJobs": [
+              {}
+            ],
+            "Items": [
+              {
+                "Name": "string",
+                "User": {
+                  "FullName": "string",
+                  "ZipCode": "string",
+                  "Password": "string",
+                  "MemberPassword": "string",
+                  "EmailVerificationToken": "string",
+                  "NotificationTriggerTimeDays": 0,
+                  "NotificationSnoozeTriggerTimeDays": 0,
+                  "NotificationBadge": 0,
+                  "ProfilePicBlobUri": "string",
+                  "GoogleId": "string",
+                  "FacebookId": "string",
+                  "UserJobs": [
+                    {}
+                  ],
+                  "Attributes": [
+                    {
+                      "User": {},
+                      "EntityId": "string",
+                      "Value": "string",
+                      "Id": "string",
+                      "Version": "string",
+                      "CreatedAt": "2017-11-16T14:47:04.022Z",
+                      "UpdatedAt": "2017-11-16T14:47:04.022Z",
+                      "Deleted": true
+                    }
+                  ],
+                  "Email": "string",
+                  "EmailConfirmed": true,
+                  "PasswordHash": "string",
+                  "SecurityStamp": "string",
+                  "PhoneNumber": "string",
+                  "PhoneNumberConfirmed": true,
+                  "TwoFactorEnabled": true,
+                  "LockoutEndDateUtc": "2017-11-16T14:47:04.022Z",
+                  "LockoutEnabled": true,
+                  "AccessFailedCount": 0,
+                  "Roles": [
+                    {
+                      "UserId": "string",
+                      "RoleId": "string"
+                    }
+                  ],
+                  "Claims": [
+                    {
+                      "Id": 0,
+                      "UserId": "string",
+                      "ClaimType": "string",
+                      "ClaimValue": "string"
+                    }
+                  ],
+                  "Logins": [
+                    {
+                      "LoginProvider": "string",
+                      "ProviderKey": "string",
+                      "UserId": "string"
+                    }
+                  ],
+                  "Id": "string",
+                  "UserName": "string"
+                },
+                "Category": {},
+                "FileName": "string",
+                "Notes": "string",
+                "NotificationSentAt": "2017-11-16T14:47:04.022Z",
+                "NotificationDismiss": true,
+                "IssueDate": "2017-11-16T14:47:04.022Z",
+                "ExpirationDate": "2017-11-16T14:47:04.022Z",
+                "HourTrackers": [
+                  {
+                    "HourTrackerType": {
+                      "Id": 0,
+                      "SortOrder": 0,
+                      "Name": "string",
+                      "DisplayName": "string",
+                      "MaxDisplayDecimals": 0,
+                      "CategoryTypes": [
+                        {
+                          "Id": 0,
+                          "Name": "string",
+                          "IsUserCreatable": true,
+                          "MaxHourTrackers": 0,
+                          "HourTrackerTypes": [
+                            {}
+                          ],
+                          "AllowedinJobs": [
+                            {}
+                          ]
+                        }
+                      ]
+                    },
+                    "CategoryItem": {},
+                    "Hours": 0,
+                    "Id": "string",
+                    "Version": "string",
+                    "CreatedAt": "2017-11-16T14:47:04.022Z",
+                    "UpdatedAt": "2017-11-16T14:47:04.022Z",
+                    "Deleted": true
+                  }
+                ],
+                "CategoryItemImages": [
+                  {
+                    "CategoryItem": {},
+                    "BlobUri": "string",
+                    "SortOrder": 0,
+                    "Id": "string",
+                    "Version": "string",
+                    "CreatedAt": "2017-11-16T14:47:04.022Z",
+                    "UpdatedAt": "2017-11-16T14:47:04.022Z",
+                    "Deleted": true
+                  }
+                ],
+                "Id": "string",
+                "Version": "string",
+                "CreatedAt": "2017-11-16T14:47:04.022Z",
+                "UpdatedAt": "2017-11-16T14:47:04.022Z",
+                "Deleted": true
+              }
+            ],
+            "Id": "string",
+            "Version": "string",
+            "CreatedAt": "2017-11-16T14:47:04.022Z",
+            "UpdatedAt": "2017-11-16T14:47:04.022Z",
+            "Deleted": true
+          }
+        ],
+        "Id": "string",
+        "Version": "string",
+        "CreatedAt": "2017-11-16T14:47:04.022Z",
+        "UpdatedAt": "2017-11-16T14:47:04.022Z",
+        "Deleted": true
+      },
+      "JobResources": [
+        {
+          "Name": "string",
+          "ResourceLinkUri": "string",
+          "ResourceImageBlobUri": "string",
+          "DisplaySubTitle": "string",
+          "Job": {
+            "Name": "string",
+            "JobRoles": [
+              {}
+            ],
+            "JobResources": [
+              {}
+            ],
+            "AllowedCategoryTypes": [
+              {
+                "Id": 0,
+                "Name": "string",
+                "IsUserCreatable": true,
+                "MaxHourTrackers": 0,
+                "HourTrackerTypes": [
+                  {
+                    "Id": 0,
+                    "SortOrder": 0,
+                    "Name": "string",
+                    "DisplayName": "string",
+                    "MaxDisplayDecimals": 0,
+                    "CategoryTypes": [
+                      {}
+                    ]
+                  }
+                ],
+                "AllowedinJobs": [
+                  {}
+                ]
+              }
+            ],
+            "Categories": [
+              {
+                "Name": "string",
+                "Job": {},
+                "IsDefaultSuggestion": true,
+                "IsSystemCategory": true,
+                "CategoryType": {
+                  "Id": 0,
+                  "Name": "string",
+                  "IsUserCreatable": true,
+                  "MaxHourTrackers": 0,
+                  "HourTrackerTypes": [
+                    {
+                      "Id": 0,
+                      "SortOrder": 0,
+                      "Name": "string",
+                      "DisplayName": "string",
+                      "MaxDisplayDecimals": 0,
+                      "CategoryTypes": [
+                        {}
+                      ]
+                    }
+                  ],
+                  "AllowedinJobs": [
+                    {}
+                  ]
+                },
+                "UserJobs": [
+                  {}
+                ],
+                "Items": [
+                  {
+                    "Name": "string",
+                    "User": {
+                      "FullName": "string",
+                      "ZipCode": "string",
+                      "Password": "string",
+                      "MemberPassword": "string",
+                      "EmailVerificationToken": "string",
+                      "NotificationTriggerTimeDays": 0,
+                      "NotificationSnoozeTriggerTimeDays": 0,
+                      "NotificationBadge": 0,
+                      "ProfilePicBlobUri": "string",
+                      "GoogleId": "string",
+                      "FacebookId": "string",
+                      "UserJobs": [
+                        {}
+                      ],
+                      "Attributes": [
+                        {
+                          "User": {},
+                          "EntityId": "string",
+                          "Value": "string",
+                          "Id": "string",
+                          "Version": "string",
+                          "CreatedAt": "2017-11-16T14:47:04.022Z",
+                          "UpdatedAt": "2017-11-16T14:47:04.022Z",
+                          "Deleted": true
+                        }
+                      ],
+                      "Email": "string",
+                      "EmailConfirmed": true,
+                      "PasswordHash": "string",
+                      "SecurityStamp": "string",
+                      "PhoneNumber": "string",
+                      "PhoneNumberConfirmed": true,
+                      "TwoFactorEnabled": true,
+                      "LockoutEndDateUtc": "2017-11-16T14:47:04.022Z",
+                      "LockoutEnabled": true,
+                      "AccessFailedCount": 0,
+                      "Roles": [
+                        {
+                          "UserId": "string",
+                          "RoleId": "string"
+                        }
+                      ],
+                      "Claims": [
+                        {
+                          "Id": 0,
+                          "UserId": "string",
+                          "ClaimType": "string",
+                          "ClaimValue": "string"
+                        }
+                      ],
+                      "Logins": [
+                        {
+                          "LoginProvider": "string",
+                          "ProviderKey": "string",
+                          "UserId": "string"
+                        }
+                      ],
+                      "Id": "string",
+                      "UserName": "string"
+                    },
+                    "Category": {},
+                    "FileName": "string",
+                    "Notes": "string",
+                    "NotificationSentAt": "2017-11-16T14:47:04.022Z",
+                    "NotificationDismiss": true,
+                    "IssueDate": "2017-11-16T14:47:04.022Z",
+                    "ExpirationDate": "2017-11-16T14:47:04.022Z",
+                    "HourTrackers": [
+                      {
+                        "HourTrackerType": {
+                          "Id": 0,
+                          "SortOrder": 0,
+                          "Name": "string",
+                          "DisplayName": "string",
+                          "MaxDisplayDecimals": 0,
+                          "CategoryTypes": [
+                            {
+                              "Id": 0,
+                              "Name": "string",
+                              "IsUserCreatable": true,
+                              "MaxHourTrackers": 0,
+                              "HourTrackerTypes": [
+                                {}
+                              ],
+                              "AllowedinJobs": [
+                                {}
+                              ]
+                            }
+                          ]
+                        },
+                        "CategoryItem": {},
+                        "Hours": 0,
+                        "Id": "string",
+                        "Version": "string",
+                        "CreatedAt": "2017-11-16T14:47:04.022Z",
+                        "UpdatedAt": "2017-11-16T14:47:04.022Z",
+                        "Deleted": true
+                      }
+                    ],
+                    "CategoryItemImages": [
+                      {
+                        "CategoryItem": {},
+                        "BlobUri": "string",
+                        "SortOrder": 0,
+                        "Id": "string",
+                        "Version": "string",
+                        "CreatedAt": "2017-11-16T14:47:04.022Z",
+                        "UpdatedAt": "2017-11-16T14:47:04.022Z",
+                        "Deleted": true
+                      }
+                    ],
+                    "Id": "string",
+                    "Version": "string",
+                    "CreatedAt": "2017-11-16T14:47:04.023Z",
+                    "UpdatedAt": "2017-11-16T14:47:04.023Z",
+                    "Deleted": true
+                  }
+                ],
+                "Id": "string",
+                "Version": "string",
+                "CreatedAt": "2017-11-16T14:47:04.023Z",
+                "UpdatedAt": "2017-11-16T14:47:04.023Z",
+                "Deleted": true
+              }
+            ],
+            "Id": "string",
+            "Version": "string",
+            "CreatedAt": "2017-11-16T14:47:04.023Z",
+            "UpdatedAt": "2017-11-16T14:47:04.023Z",
+            "Deleted": true
+          },
+          "JobRole": {},
+          "Id": "string",
+          "Version": "string",
+          "CreatedAt": "2017-11-16T14:47:04.023Z",
+          "UpdatedAt": "2017-11-16T14:47:04.023Z",
+          "Deleted": true
+        }
+      ],
+      "UserJobs": [
+        {}
+      ],
+      "Id": "string",
+      "Version": "string",
+      "CreatedAt": "2017-11-16T14:47:04.023Z",
+      "UpdatedAt": "2017-11-16T14:47:04.023Z",
+      "Deleted": true
     }
   ],
   "Id": "string",
-  "UpdatedAt": "2017-11-15T16:17:51.311Z",
-  "CreatedAt": "2017-11-15T16:17:51.311Z"
+  "Version": "string",
+  "CreatedAt": "2017-11-16T14:47:04.023Z",
+  "UpdatedAt": "2017-11-16T14:47:04.023Z",
+  "Deleted": true
 }</code></pre>
 
       <h3 class="ref-title">
@@ -155,66 +1226,183 @@
         <a href="#" class="js-toggle-code collapsed">Model</a>
       </h3>
 
-      <pre class="js-pre collapsed"><code>JobDTO{
-    Name (string, optional),
-    JobRoles (Array[JobRoleDTO
+      <pre class="js-pre collapsed"><code>UserJob{
+    User (ApplicationUser),
+    Job (Job),
+    Categories (Array[Category
     ], optional),
-    JobResources (Array[JobResourceDTO
-    ], optional),
-    AllowedCategoryTypes (Array[CategoryTypeDTO
-    ], optional),
-    Categories (Array[CategoryDTO
+    JobRoles (Array[JobRole
     ], optional),
     Id (string, optional),
+    Version (string, optional),
+    CreatedAt (string, optional),
     UpdatedAt (string, optional),
-    CreatedAt (string, optional)
-}
-JobRoleDTO{
+    Deleted (boolean, optional)
+}ApplicationUser{
+    FullName (string, optional),
+    ZipCode (string, optional),
+    Password (string, optional),
+    MemberPassword (string, optional),
+    EmailVerificationToken (string, optional),
+    NotificationTriggerTimeDays (integer, optional),
+    NotificationSnoozeTriggerTimeDays (integer, optional),
+    NotificationBadge (integer, optional),
+    ProfilePicBlobUri (string, optional),
+    GoogleId (string, optional),
+    FacebookId (string, optional),
+    UserJobs (Array[UserJob
+    ], optional),
+    Attributes (Array[Attribute
+    ], optional),
+    Email (string, optional),
+    EmailConfirmed (boolean, optional),
+    PasswordHash (string, optional),
+    SecurityStamp (string, optional),
+    PhoneNumber (string, optional),
+    PhoneNumberConfirmed (boolean, optional),
+    TwoFactorEnabled (boolean, optional),
+    LockoutEndDateUtc (string, optional),
+    LockoutEnabled (boolean, optional),
+    AccessFailedCount (integer, optional),
+    Roles (Array[IdentityUserRole
+    ], optional, read only),
+    Claims (Array[IdentityUserClaim
+    ], optional, read only),
+    Logins (Array[IdentityUserLogin
+    ], optional, read only),
+    Id (string, optional),
+    UserName (string, optional)
+}Job{
+    Name (string, optional),
+    JobRoles (Array[JobRole
+    ], optional),
+    JobResources (Array[JobResource
+    ], optional),
+    AllowedCategoryTypes (Array[CategoryType
+    ], optional),
+    Categories (Array[Category
+    ], optional),
+    Id (string, optional),
+    Version (string, optional),
+    CreatedAt (string, optional),
+    UpdatedAt (string, optional),
+    Deleted (boolean, optional)
+}Category{
+    Name (string, optional),
+    Job (Job, optional),
+    IsDefaultSuggestion (boolean, optional),
+    IsSystemCategory (boolean, optional),
+    CategoryType (CategoryType),
+    UserJobs (Array[UserJob
+    ], optional),
+    Items (Array[CategoryItem
+    ], optional),
+    Id (string, optional),
+    Version (string, optional),
+    CreatedAt (string, optional),
+    UpdatedAt (string, optional),
+    Deleted (boolean, optional)
+}JobRole{
     Name (string, optional),
     Step (integer, optional),
     Value (string, optional),
-    JobId (string, optional),
-    JobResources (Array[JobResourceDTO
+    Job (Job),
+    JobResources (Array[JobResource
+    ], optional),
+    UserJobs (Array[UserJob
     ], optional),
     Id (string, optional),
+    Version (string, optional),
+    CreatedAt (string, optional),
     UpdatedAt (string, optional),
-    CreatedAt (string, optional)
-}
-JobResourceDTO{
+    Deleted (boolean, optional)
+}Attribute{
+    User (ApplicationUser, optional),
+    EntityId (string, optional),
+    Value (string, optional),
+    Id (string, optional),
+    Version (string, optional),
+    CreatedAt (string, optional),
+    UpdatedAt (string, optional),
+    Deleted (boolean, optional)
+}IdentityUserRole{
+    UserId (string, optional),
+    RoleId (string, optional)
+}IdentityUserClaim{
+    Id (integer, optional),
+    UserId (string, optional),
+    ClaimType (string, optional),
+    ClaimValue (string, optional)
+}IdentityUserLogin{
+    LoginProvider (string, optional),
+    ProviderKey (string, optional),
+    UserId (string, optional)
+}JobResource{
     Name (string, optional),
     ResourceLinkUri (string, optional),
     ResourceImageBlobUri (string, optional),
     DisplaySubTitle (string, optional),
-    JobId (string, optional),
-    JobRoleId (string, optional),
+    Job (Job, optional),
+    JobRole (JobRole, optional),
     Id (string, optional),
+    Version (string, optional),
+    CreatedAt (string, optional),
     UpdatedAt (string, optional),
-    CreatedAt (string, optional)
-}
-CategoryTypeDTO{
+    Deleted (boolean, optional)
+}CategoryType{
     Id (integer, optional),
     Name (string, optional),
     IsUserCreatable (boolean, optional),
     MaxHourTrackers (integer, optional),
-    HourTrackerTypes (Array[HourTrackerTypeDTO
+    HourTrackerTypes (Array[HourTrackerType
+    ], optional),
+    AllowedinJobs (Array[Job
     ], optional)
-}
-CategoryDTO{
+}CategoryItem{
     Name (string, optional),
-    JobId (string, optional),
-    IsDefaultSuggestion (boolean, optional),
-    IsSystemCategory (boolean, optional),
-    CategoryType (CategoryTypeDTO, optional),
+    User (ApplicationUser, optional),
+    Category (Category, optional),
+    FileName (string, optional),
+    Notes (string, optional),
+    NotificationSentAt (string, optional),
+    NotificationDismiss (boolean, optional),
+    IssueDate (string, optional),
+    ExpirationDate (string, optional),
+    HourTrackers (Array[HourTracker
+    ], optional),
+    CategoryItemImages (Array[CategoryItemImage
+    ]),
     Id (string, optional),
+    Version (string, optional),
+    CreatedAt (string, optional),
     UpdatedAt (string, optional),
-    CreatedAt (string, optional)
-}
-HourTrackerTypeDTO{
+    Deleted (boolean, optional)
+}HourTrackerType{
     Id (integer, optional),
     SortOrder (integer, optional),
     Name (string, optional),
     DisplayName (string, optional),
-    MaxDisplayDecimals (integer, optional)
+    MaxDisplayDecimals (integer, optional),
+    CategoryTypes (Array[CategoryType
+    ], optional)
+}HourTracker{
+    HourTrackerType (HourTrackerType, optional),
+    CategoryItem (CategoryItem, optional),
+    Hours (number, optional),
+    Id (string, optional),
+    Version (string, optional),
+    CreatedAt (string, optional),
+    UpdatedAt (string, optional),
+    Deleted (boolean, optional)
+}CategoryItemImage{
+    CategoryItem (CategoryItem),
+    BlobUri (string, optional),
+    SortOrder (integer, optional),
+    Id (string, optional),
+    Version (string, optional),
+    CreatedAt (string, optional),
+    UpdatedAt (string, optional),
+    Deleted (boolean, optional)
 }</code></pre>
     </div>
 

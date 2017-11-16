@@ -14,7 +14,12 @@ body {
     width: 1200px;
     max-width:100%;
 }
-
+a{
+    color:#F68D1E;
+}
+a:visited{
+    color:#ac4500;
+}
 span.link {
     font-weight:700;
     color:#489BD4;
