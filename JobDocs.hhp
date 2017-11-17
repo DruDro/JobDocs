@@ -1,9 +1,12 @@
 [OPTIONS]
+Title=JobDocs Reference
 Compatibility=1.1 or later
 Compiled file=JobDocs.chm
 Contents file=JobDocs.hhc
 Index file=JobDocs.hhk
+AutoIndex=Yes
 Default topic=articles\overview.htm
+HomePage=articles\overview.htm
 Display compile progress=Yes
 Error log file=log.txt
 Full-text search=Yes

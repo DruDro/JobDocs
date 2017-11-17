@@ -59,10 +59,10 @@
 			<param name="Name" value="Requirements">
 			<param name="Local" value="articles\requirements.htm">
 			</OBJECT>
-		<LI> <OBJECT type="text/sitemap">
+		<!--<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Troubleshooting">
 			<param name="Local" value="articles\troubleshooting.htm">
-			</OBJECT>
+			</OBJECT>-->
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="API Reference">
 			<param name="Local" value="articles\api-ref.htm">

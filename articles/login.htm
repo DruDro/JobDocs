@@ -12,7 +12,8 @@
     <div class="header">
         <h1>
             <span class="product-logo">
-                <img src="../assets/images/logo.png" alt="" class="l"><img src="../assets/images/logo-small.png" alt="" class="s">
+                <img src="../assets/images/logo.png" alt="" class="l">
+                <img src="../assets/images/logo-small.png" alt="" class="s">
             </span>
             <span class="article__title">Sign Up / Log in</span>
         </h1>
@@ -23,20 +24,20 @@
         <div class="article__header">
             <h2>Table of Contents</h2>
             <ul class="local-toc">
-                <li>
+                <li><p>
                     <a href="#desc">User Flow Description</a>
                     <ul>
-                        <li>
+                        <li><p>
                             <a href="#login">Log in</a>
-                        </li>
-                        <li>
+                        </p></li>
+                        <li><p>
                             <a href="#signup">Sign up</a>
-                        </li>
+                        </p></li>
                     </ul>
-                </li>
-                <li>
+                </p></li>
+                <li><p>
                     <a href="#chart">User Flow Chart</a>
-                </li>
+                </p></li>
             </ul>
         </div>
 
@@ -45,10 +46,10 @@
             <h2>User Flow Description</h2>
             <p>On the first JobDocs launch, User has 2 options to continue working with the application:</p>
             <ol>
-                <li>
-                    <b>Log in</b> using an existing confirmed account.</li>
-                <li>
-                    <b>Sign up</b> - create a new account.</li>
+                <li><p>
+                    <b>Log in</b> using an existing confirmed account.</p></li>
+                <li><p>
+                    <b>Sign up</b> - create a new account.</p></li>
             </ol>
             <p>
                 <img src="../assets/images/screenshots/login-signup.png" alt="Login / Sign Up Screen" class="screen">
@@ -57,15 +58,15 @@
             <h3>Log in</h3>
             <p>If User has an existing JobDocs profile, it can be used for logging in the application:</p>
             <ul>
-                <li>On the above screen, tap
+                <li><p>On the above screen, tap
                     <b>LOG IN</b>.
-                </li>
-                <li>Type in
+                </p></li>
+                <li><p>Type in
                     <b>e-mail</b> and
-                    <b>password</b> you specified when creating a JobDocs account.</li>
-                <li>Tap
+                    <b>password</b> you specified when creating a JobDocs account.</p></li>
+                <li><p>Tap
                     <b>SIGN IN</b>.
-                </li>
+                </p></li>
             </ul>
             <p class="note">If you forgot your passowrd, just tap the
                 <span class="link">Forgot password?</span> link - then follow the steps to recover your password.</p>
@@ -75,24 +76,24 @@
                 <b>Facebook</b> or
                 <b>Google</b> account. For this:</p>
             <ul>
-                <li>Tap the
+                <li><p>Tap the
                     <b>SIGN UP</b> button, if you are at the initial step, or the
-                    <span class="link orange">Create new account</span> link - if at the LOG IN screen already.</li>
-                <li>Tap a button with the name of the chosen social network.</li>
-                <li>On the appeared screen, provide your
+                    <span class="link orange">Create new account</span> link - if at the LOG IN screen already.</p></li>
+                <li><p>Tap a button with the name of the chosen social network.</p></li>
+                <li><p>On the appeared screen, provide your
                     <b>credentials</b> for the social profile.
-                    <b>LOG IN</b>.</li>
+                    <b>LOG IN</b>.</p></li>
             </ul>
             <a name="signup"></a>
             <h3>Sign up</h3>
             <p>To create a new account:</p>
             <ul>
-                <li>You can use a social network account to create a JobDocs profile. See
-                    <a href="#social">Log in with Google or Facebook</a>. Or follow the steps below.</li>
-                <li>Tap the
+                <li><p>You can use a social network account to create a JobDocs profile. See
+                    <a href="#social">Log in with Google or Facebook</a>. Or follow the steps below.</p></li>
+                <li><p>Tap the
                     <b>SIGN UP</b> button.
-                </li>
-                <li>On the
+                </p></li>
+                <li><p>On the
                     <b>Create new account</b> screen:
                     <p>
                         <img src="../assets/images/screenshots/signup.png" alt="" class="screen">
@@ -101,15 +102,30 @@
                     <b>take a photo</b> using the camera on your phone or to
                     <b>choose from library</b>. Or just skip this step.
 
-                </li>
-                <li>Provide your
-                    <b>Full Name</b>,
-                    <b>Email Address</b>,
-                    <b>Zip Code</b>,
-                    <b>Password</b> (6 or more characters).</li>
-                <li>Tap
+                </p></li>
+                <li><p>Provide your
+                    <ul>
+                        <li><p>
+                                <b>Full Name</b>
+                                <sup style="color:red">required field</sup> &mdash; at least 1 character, maximum - 256 characters</p></li>
+                        <li><p>
+                           
+                            <b>Email Address</b>
+                            <sup style="color:red">required field</sup> &mdash; '@' and '.' are required characters, maximum - 256 characters
+                            </p></li>
+                        <li><p>
+                                <b>Zip Code</b>
+                                <sup style="color:red">required field</sup> &mdash; at least 5 characters, maximum - 9 characters
+                            </p></li>
+                        <li><p>
+                                <b>Password</b>
+                                <sup style="color:red">required field</sup> &mdash; 6 characters or more ( minimum 5 any symbols and at least 1
+                                number), maximum - 256 characters</p></li>
+                    </ul>
+                </p></li>
+                <li><p>Tap
                     <b>CREATE NEW ACCOUNT</b>
-                </li>
+                </p></li>
             </ul>
             <p>A new page appears -
                 <b>"What type of job do you do?"</b>.</p>
@@ -119,37 +135,53 @@
             </p>
             <p>Your account is not yet created. A few more steps required:</p>
             <ul>
-                <li>Now you need
-                    <b>Select Job</b> from a predefined list of jobs. The list will appear after tapping on the
-                    <b>Select Job</b> field.</li>
-                <li>Next
-                    <b>Select Role(s)</b> like in the previous step.</li>
-                <li>Tap
+                <li><p>Now you need
+                    <b>Select Job</b>
+                    <sup style="color:red">required field</sup> from a predefined list of jobs. The list will appear after tapping on the
+                    <b>Select Job</b> field.</p></li>
+                <li><p>Next
+                    <b>Select Role(s)</b>
+                    <sup style="color:green">optional field</sup> &mdash; tap to add your job role, title, credentials, etc., for example: RN, APRN, NP.</p></li>
+                <li><p>Tap
                     <b>NEXT</b>
-                </li>
+                </p></li>
             </ul>
-            <p>The final step is
-                <b>selecting categories</b> of documents you want to store in JobDocs:</p>
+            <p>Next we need to organize
+                <b>categories</b> of documents you will store in JobDocs:</p>
             <ul>
-                <li>Select categories of documents from the list. Some of them are already preselected based on your Job. Tap
-                    <b>NEXT</b>.</li>
-                <li>
-                    Here is all the gathered information you have provided above. If anything needs corrections, tap
-                    <span class="link orange">Edit</span> next to the needed information block.
+                <li><p>Select categories of documents from the list. Some of them are already preselected based on your Job.</p></li>
+                <li><p><b>NEXT</b>.</p></li>
+            </ul>
+            <p>The final step is to
+                <b>set up notification and snooze frequency</b>.</p>
+            <p>
+                <img src="../assets/images/screenshots/settings-notifications.png" alt="Notifications Settings" class="screen">
+            </p>
+            <ul>
+                <li><p>
+                    <b>Set reminders for upcoming expiration dates. </b> - you can set reminders to 1, 2 or 3 months</p></li>
+                <li><p>
+                    <b>Snooze</b> - set the interval of repeating notifications.</p></li>
+                <li><p>
+                    <b>NEXT</b>
+                </p></li>
+            </ul>
+            <p>
+                Here is all the gathered information you have provided above. If anything needs corrections, tap
+                <span class="link orange">Edit</span> next to the needed information block.</p>
 
-                    <p>
-                        <img src="../assets/images/screenshots/confirm-acc.png" alt="" class="screen">
-                    </p>
-                </li>
-                <li>
+            <p>
+                <img src="../assets/images/screenshots/confirm-acc.png" alt="" class="screen">
+            </p>
+            <ul>
+                <li><p>
                     <b>CONFIRM</b>
-                </li>
-                <li>
+                </p></li>
+                <li><p>
                     <b>GO TO HOME</b>
                     <p>
                         <img src="../assets/images/screenshots/goHome.png" alt="" class="screen">
-                    </p>
-                </li>
+                    </p></li>
             </ul>
             <p>When finished creating an account, you get to the
                 <b>Home Screen</b> of the JobDocs application. See the
@@ -166,12 +198,12 @@
         <div class="article__footer">
             <h2>See Also</h2>
             <ul class="see-also">
-                <li>
+                <li><p>
                     <a href="home.htm">Home Screen</a>
-                </li>
-                <li>
+                </p></li>
+                <li><p>
                     <a href="settings.htm">Settings</a>
-                </li>
+                </p></li>
             </ul>
         </div>
 
@@ -180,7 +212,7 @@
     <div class="footer">
         <span class="copy">Copyright &copy; 2017 | GentleCode LLC | All Rights Reserved</span>
     </div>
-    
+
 </BODY>
 
 </HTML>
